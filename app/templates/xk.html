@@ -1,0 +1,289 @@
+{% extends 'base.html' %}
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="../static/community.css">
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script type="text/javascript">
+  $(document).ready(function(){
+    let nums=25;
+    for(let i=1;i<=nums;i++)
+    {
+      $("#p"+i.toString()).hide();
+    }
+
+    for(let i=1;i<=nums;i++)
+    {
+      $("#button"+i.toString()).click(function(){
+        $("#p"+i.toString()).toggle();
+      })
+    }
+  });
+</script>
+{% endblock %}
+{% block content %}
+<main role="main">
+  <div id="pmyCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="first-slide" src="../static/学术科技" alt="First slide">
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h1>Example headline.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="second-slide" src="../static/学术科技" alt="Second slide">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="third-slide" src="../static/学术科技" alt="Third slide">
+        <div class="container">
+          <div class="carousel-caption text-right">
+            <h1>One more for good measure.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/学术科技/基础数学.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>基础教学协会</h2>
+        <h3>☆☆☆☆☆</h3>
+        <p id="p1">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <p><button class="btn btn-secondary"  id="button1">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/学术科技/数学建模.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>数学建模协会</h2>
+        <h3>☆☆☆☆☆</h3>
+        <p id="p2">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        <p><button class="btn btn-secondary"  id="button2">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/学术科技/三海原.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>山海原经典网</h2>
+        <h3>☆☆☆☆☆</h3>
+        <p id="p3">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><button class="btn btn-secondary"  id="button3">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/交通科技.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>交通运输科技协会</h2>
+          <h3>☆☆☆☆</h3>
+          <p id="p4">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button4">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/测量.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>测量协会</h2>
+          <h3>☆☆☆☆</h3>
+          <p id="p5">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button5">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/投资理财.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>投资理财协会</h2>
+          <h3>☆☆☆☆</h3>
+          <p id="p6">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button6">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/ACM.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>ACM协会</h2>
+          <h3>☆☆☆☆</h3>
+          <p id="p7">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button7">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/物理协会.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>物理协会</h2>
+          <h3>☆☆☆☆</h3>
+          <p id="p8">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button8">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/大学生创造.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>大学生创造学会</h2>
+          <h3>☆☆☆</h3>
+          <p id="p9">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button9">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/机器人.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>机器人协会</h2>
+          <h3>☆☆☆</h3>
+          <p id="p10">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button10">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/法律.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>大学生法律协会</h2>
+          <h3>☆☆☆</h3>
+          <p id="p11">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button11">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/PPter.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>PPTer协会</h2>
+          <h3>☆☆☆</h3>
+          <p id="p12">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button12">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/大学生生命.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>大学生生命科学学会</h2>
+          <h3>☆☆☆</h3>
+          <p id="p13">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button13">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+      
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/计算机网络.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>计算机与网络科技协会</h2>
+          <h3>☆☆☆</h3>
+          <p id="p14">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button14">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+      
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/环境.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>环境协会</h2>
+          <h3>☆☆☆</h3>
+          <p id="p15">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button15">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/化学.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>化学协会</h2>
+          <h3>☆☆☆</h3>
+          <p id="p16">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button16">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/力学科技.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>力学与科技协会</h2>
+          <h3>☆☆☆</h3>
+          <p id="p17">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button17">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/物流.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>物流协会</h2>
+          <h3>☆☆☆</h3>
+          <p id="p18">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button18">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/工程实践.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>工程实践创新协会</h2>
+          <h3>☆☆</h3>
+          <p id="p19">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button19">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/箐蓉.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>箐蓉协会</h2>
+          <h3>☆☆</h3>
+          <p id="p20">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button20">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/office.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>Office职场训练营</h2>
+          <h3>☆☆</h3>
+          <p id="p21">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button21">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/创客.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>创客协会</h2>
+          <h3>☆☆</h3>
+          <p id="p22">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button22">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/综合.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>综合设施工程协会</h2>
+          <h3>☆☆</h3>
+          <p id="p23">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button23">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/电子.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>电子科技协会</h2>
+          <h3>☆</h3>
+          <p id="p24">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button24">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/航模.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>航模协会</h2>
+          <h3>☆</h3>
+          <p id="p25">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button class="btn btn-secondary"  id="button25">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+  </div><!-- /.container -->
+
+</main>
+{% endblock %}
