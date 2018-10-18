@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="../static/community.css">
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script type="text/javascript">
+  $(document).ready(function(){
+    let nums=5;
+    for(let i=1;i<=nums;i++)
+    {
+      $("#p"+i.toString()).hide();
+    }
+
+    for(let i=1;i<=nums;i++)
+    {
+      $("#button"+i.toString()).click(function(){
+        $("#p"+i.toString()).toggle();
+      })
+    }
+  });
+</script>
+{% endblock %}
+{% block content %}
+<main role="main">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <!-- 有思 -->
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/best/有思.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>西南交大有思新媒体</h2>
+        <p >西南交通大学努力构建以"青年传媒"为品牌的学生全媒体中心（一个品牌：青年传媒全媒体中心，双重属性：团委领导的校园媒体，校级
+          <span id="p1">学生组织，四项职能：思想引导，服务咨询，新闻宣传，五大组织：《交大青年报》编辑部，有思新媒体，新闻中心，1896视觉工作室，网
+          络工作室，五大产品：《交大青年》报，新青年素质网，有思微信公众号，@青春交大官方微博，有思手机应用APP），通过六大产品推动旗下的报纸，
+          新媒体等产品品牌建设，努力形成有效的网络思想教育的媒体，合力使互联网真正成为大学生思想引导的新媒体，组织动员的新途径，服务学生的
+          新工具，开展工作的新平台。<br>
+          <a href="../static/best/二维码/有思.jpg">添加公众号，了解更多</a>
+        </span></p>
+        <p><button class="btn btn-secondary"  id="button1">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+      <!-- 校学生会 -->
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/best/学生会.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>西南交通大学学生会</h2>
+        <p>西南交通大学学生会成立于1919年5月，是西南交通大学校党委领导下，校团委指导下的自我教育，自我管理，自我服务，自我监督的学<span id="p2">生
+          组织，学生会下设活动部，宣传部，考核部，青年之声服务部，外联部，学习部，新媒体部，留学生部门九个部门，学生会充分发挥着连接学
+          校与广大同学的桥梁纽带作用，积极营造健康有序，生活活泼的校园文化氛围，丰富了交大学子的课余生活。同时，西南交通
+          大学学生会指导各个学院之间的交流和进步，拓展西南交通大学学生会与其他兄弟院校学生会，社会各界的交流与合作关系。由学生会举办的
+          青年讲坛，"乐言杯"辩论赛，爱音乐，金话筒以及毕业E册等传统品牌活动，更是成为同学们释放激情展示风采的舞台。服务学子，建设交大
+          ，燃烧热血，共筑伟梦。
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button2">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+      <!-- 研究生会 -->
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/best/研究生.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>西南交通大学研究生会</h2>
+        <p>西南交通大学研究生会是在校党委的领导下，在校团委的指导下开展工作。是西南交通大学全体在校研究生自我服务，自我管理，自我教<span id="p3">
+          育的群众性组织，代表的是学校全体研究生的权益和意见。西南交通大学研究生会以服务广大研究生为根本宗旨，为增加研究生之间，研究生
+          与学校之间以及研究生与社会之间的交流起到了积极的作用，丰富了研究生的校园文化生活。校研究生会始终以"研究生人才培养"为中心开展各项工作
+          推进研究生思想政治素养和学术，体育，文化，心理素质的培养，推进面向广大研究生同学的学习和生活等方面服务的发展，推进研究生会和学院
+          研究生分会的自身建设，近年来，校研究生会开展的眷诚大讲堂，镜湖半月谈，走进名企等学术实践类活动，以及爱音乐校园歌手挑战赛，出彩交大
+          等各类精彩的文化活动，在学校端养高素质，高层次，多样化，创造性人才的进程中发挥了积极作用</span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button3">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/best/青协.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>西南交通大学青年志愿者联合会</h2>
+          <p>西南交通大学青年志愿者联合会成立于2006年3月，是在校团委的指导下成立的公益类学生组织，青年志愿者联合会现拥有学院分会19个
+            <span id="p4">，青年志愿者联合会积极倡导"奉献，友发，互助，进步"的志愿服务精神，活动涵盖了敬老爱幼，关爱儿童，保护环境，
+            公益服务，法律援助，义务支教，扶残助残，服务同学等八大类项目，足迹遍及了校园，成都市以及周边地区，先后在数十个村镇和几十个公益
+            性单位建立了爱心服务基地。2010年5月，由西南交通大学青年志愿者联合会正式成立了全国高校首支"综合应急志愿者服务队"，能够从事消防救援
+            ，医疗卫生，交通安全，物流运输，心理援助，赛会服务等专业化应急救援服务。
+            </span></p>
+          <p><button class="btn btn-secondary"  id="button4">View details &raquo;</button></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img class="rounded-circle" src="../static/best/社团联合会.jpg" alt="Generic placeholder image" width="100" height="100">
+            <h2>西南交通大学学生社团联合会</h2>
+            <p>西南交通大学学生社团联合会成立于2000年，是在校党委领导，校团委指导下对学生社团进行服务和管理的全校性组织。社团联合会
+              <span id="p5">根据社团宗旨和特色，有效实行分级指导，分类管理制度，服务及管理学术科技类，理论研究类，体育健身类，文化艺术
+                类，校园服务类和公益实践类六个大类132个学生社团。同时，学生社团联合会将各社团根据发展阶段与表现情况评定为新星社团（☆），繁
+                星社团（☆☆），榜样社团（☆☆☆），精英社团（☆☆☆☆）和领袖社团（☆☆☆☆☆)五个等级。社团联合会积极引导各个社团多元健康
+                发展，营造精彩多样的校园文化氛围。学生社团联合会坚持指导社团在日常工作中落实"七个一"工程，即一个管理单位，一个考核单位，一位
+                指导老师，一个团支部，一部《章程》，一项品牌活动，旨在深入开展有内容，有价值，有意义的学生社团活动，拓宽学生知识面，全面丰富
+                我校校园文化生活。
+              </span></p>
+            <p><button class="btn btn-secondary"  id="button5">View details &raquo;</button></p>
+          </div><!-- /.col-lg-4 -->    
+    </div><!-- /.row -->
+
+  </div><!-- /.container -->
+
+</main>
+{% endblock %}

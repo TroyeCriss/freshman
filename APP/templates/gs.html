@@ -1,0 +1,331 @@
+{% extends 'base.html' %}
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="../static/community.css">
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script type="text/javascript">
+  $(document).ready(function(){
+    let nums=16;
+    for(let i=1;i<=nums;i++)
+    {
+      $("#p"+i.toString()).hide();
+    }
+
+    for(let i=1;i<=nums;i++)
+    {
+      $("#button"+i.toString()).click(function(){
+        $("#p"+i.toString()).toggle();
+      })
+    }
+  });
+</script>
+{% endblock %}
+{% block content %}
+<main role="main">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/公益实践/贫困地区.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>贫困地区教育观念救助会</h2>         
+        <h3>★★★★★</h3>
+        <p>
+          贫困地区教育观念救助会成立于2002年，由
+          校闭委指导。协会努力实践公益思想，尽己所能
+        <span id="p1">帮助并鼓舞贫困地区中、小学生，鼓励他们克服
+          困难，完成义务教育。长期目标是改变贫困地区
+          人们落后的教有观念，改变贫困地区落后的教育
+          现状。协会鼓励广大学生锻炼社会实践能办培养
+          公益意识和社会责任感，关注贫困地区教育，积
+          极参与教育帮扶工作
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button1">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/公益实践/科创.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>创新创业俱乐部</h2>         
+        <h3>★★★★★</h3>
+        <p>
+          创新创业俱乐部成立于2008年，由教务处指
+          导。协会是一个由学生自我管理，并服务于同学
+        <span id="p2">的校级科技创新组织。俱乐部参与各大竞赛的统
+          等组织以及全校各实验室的管理，以“创新、探索、
+          学习、交流”为理念，为我校学生提供开展各类
+          创新性研究和实验、实践的交流平台，促进我校
+          国家大学生科研训练计划（SRTP）、国家创新试验
+          计划、科技竞赛及大学生科学研究与创业行动计
+          划项日的发展，提高学生综合素质和能力。
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button2">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+      
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/公益实践/公益.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>公益协会</h2>         
+        <h3>★★★★</h3>
+        <p>
+          公益协会成立于2001年，由校闭委指导，
+          以“服务社会，奉献爱心”为己任，秉持“公益
+        <span id="p3">是一生的事业”的理念，长期服务社会，与流浪
+          动物爱之家、社区服务中心等多个社会公益机构
+          联系密切，并广泛参与校内外各类公益活动。协
+          会不懈追求以校园为根据地，广泛开展社会特色
+          公益，唤起大学生社会责任感，弘扬公益文化，
+          始终致力于打造特色化社团，同时将大学生公
+          益理念传播的更广，更远
+          </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button3">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+      
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/公益实践/动植物.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>动植物协会</h2>         
+        <h3>★★★★</h3>
+        <p>
+          动植物协会成立于2013年，由生命科学与工
+          程学院指导。协会是以动植物本身及与动植物相
+        <span id="p4">关的知识为中心的兴趣组织，协会成员均对动植
+          物有较大的兴趣和深入的了解。协会致力于让同
+          学们充分认识到，动物与植物作为和人类共同存
+          在的生命体对于人类的非凡意义，从而积极主动
+          关注动物与植物，做到与动植物和谐相处。
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button4">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/公益实践/雷锋.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>雷锋公司</h2>         
+          <h3>★★★</h3>
+          <p>
+            雷镣公司成立于1999年9月，由校闭委指导。
+            协会以取口号“雷厉风行，公而忘私”之诺音而
+          <span id="p5">得名，始终致力于“立足交大，服务同学日常生
+            活”。协会常规活动有爱心信使以及神秘雷锋活
+            动，特色活动则以大型失物招领为主题。协会曾
+            入选教育部《核心价值观典型案例》，人民日报
+            则以题为（不寻常的雷锋公司》对其进行报道
+            此外协会还曾荣获“四川省百佳社团领袖社团”
+            荣称号。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button5">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/公益实践/大学生孵化.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>大学生创业孵化工作室</h2>         
+          <h3>★★★</h3>
+          <p>
+            大学生创业孵化工作室成立于2013年，由科
+            技园大学生创业服务中心指导。协会的成立旨在
+          <span id="p6">积极为大学生创业活动提供相关的指导和服务，
+            并在此过程中激励大学生的创业热情，开发大学
+            生的创业潜能，让学生在交流学习中获益，提高
+            学生的领导能力以及解决企业间题的能力，同时
+            培养学生创业过程中的团队合作精神和人际沟通
+            能力。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button6">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/公益实践/环保志愿.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>环保志愿者协会</h2>         
+          <h3>★★★</h3>
+          <p>
+            环保志愿者协会成立于2003年，由地球科学
+            与环境工程学院指导。协会每个成员作为志愿者
+          <span id="p7">聚集在一起，只为一个目标并意为了这个目标
+            献出自己的一份力量。在环保的过程中，营造
+            家”与“绿色生活”是协会的理念。相信我们，
+            环保行动，我们在路上。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button7">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/公益实践/就业与创新.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>就业与创业协会</h2>         
+          <h3>★★★</h3>
+          <p>
+            大学生就业与创业协会成立于2005年，由招
+            生就业处指导。协会是一个以就业、创新、创业
+          <span id="p8">为核心的思想型、学习型、实践型的学生社团，
+            旨在为大家提供一个展示的舞台和交流的空间，
+            让我校学子走在思想和社会的前沿、丰富大学生
+            活、累积实践经验
+            </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button8">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/公益实践/思益.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>思益社</h2>         
+          <h3>★★</h3>
+          <p>
+            思益（See）社成立于2016年1月1日，山西
+            南交通大学教育基金会指导。协会是依托于西南
+          <span id="p9">交通大学教有基金会的公益性大学生平台，为大
+            学生提供回报学校的机会及交流经验的平台，以
+            志愿服务的形式，组织、策划、开展公益项目及
+            活动，同时协助教育基金会各项工作。协会定期
+            举办益计划、协助举办各项捐赠活动、开展各项
+            公益活动，可近距离接触学校领导、企业大咖
+            优秀校友及学长学姐，参与撰写新闻稱、新媒体
+            编，切实提升成员素质，累计志愿服务时间，
+            参与星级志愿者评定。协会是一个致力于成员不
+            断成长、逐渐优秀的良好平台与温暖大家庭。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button9">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/公益实践/交往拓展.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>交往拓展协会</h2>         
+          <h3>★★</h3>
+          <p>
+            大学生交往拓展协会成立于2008年，由校长
+            办公室指导。协会旨在为交大学子提供一个拓宽
+          <span id="p10">人脉、与他人交往沟通的平台，希同学们在大
+            学时光里不只局限于一个小的交际图，而是能够
+            开拓视野，放眼校内校外，积大学人脉，为现
+            在的学习、以后的工作打好基础。协会致力于让
+            同学们学会与人沟通交往的技巧，把自己更加优
+            秀、自信的一面展示出来。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button10">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/公益实践/节能.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>节能协会</h2>         
+          <h3>★★</h3>
+          <p>
+            大学生节能协会成立于2006年，由后動集团
+            指导。当今地球环境污染严重，温效应等一系
+          <span id="p11">列问题不断发生，全面采取节能减排措施势在必
+            行。协会致力于加强节能环保知识教育，组织开
+            展以节能减排为内容的学校主题教育活动和学生
+            社会宜传活动，开展节能环保社会实践活动，营
+            造节能减排校园文化及探索推广教科书环使用
+            的方法等环保行动。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button11">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/公益实践/留守儿童.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>留守儿童关爱协会</h2>         
+          <h3>★★</h3>
+          <p>
+            留守儿童关爱协会成立于2015年，由机关党
+            委指导。协会旨在成为负责任的大学生公益社团
+          <span id="p12">尽己所能帮助贫困山区中、小学留守儿童，以求
+            让他们走出缺失父母爱的阴影、关注他们的内心
+            成长问题。协会鼓励在校学生尽己之力，切实关
+            爱留守儿童、关心留守儿童健康成长问题。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button12">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/公益实践/自我成长.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>自我成长与发展协会</h2>         
+          <h3>★★</h3>
+          <p>
+            自我成长与发展协会成立于2016年，由生命
+            科学与工程学院指导。旨在帮助交大同学提升自
+          <span id="p13">我职场素养，帮助同学提前了解就业趋势和就业
+            现状，为同学们提供就业规划等，为同学们创建
+            个交流心声、了解自我、认知环境、职业成长
+            的平台。同时以教练型文化为核心，助同学对
+            自身的现状有一个由内面外的、更加清晰明了的
+            认识，探案自己的未来的方向，从而更加笃定的
+            实现自己的人生价值
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button13">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/公益实践/启蒙.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>启梦社</h2>         
+          <h3 >★</h3>
+          <p>
+            启梦社成立于2014年，由材料学院指导，协
+            会致力于为交大学子提供关于大学生暑期夏令营
+          <span id="p14">支教的相关培训及合作平台，实践公益支教思想，
+            通过一己之力帮助盆困地区儿童发展兴趣、打开
+            内心。长期目标是利用每个暑假的机会增加和留
+            守儿童的沟通、开展兴趣夏令营课程、传播先进
+            的大学生支教理念以改善乡村留守儿童的现状
+            同时，通过两个学期的培训和相处，提高大学生
+            实践能力、沟通能力、公益意识，让大学生理解
+            夏令营模式的先进支教理念。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button14">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/公益实践/国际交流.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>国际交流协会</h2>         
+          <h3>★</h3>
+          <p>
+            西南交大国际交流协会于2013年12月在西
+            交通大学国际合作与交流处和团委联合会牵头下
+          <span id="p15">成立，负责协助国际处海外交流项目及各国成都
+            领事馆与高校的合作活动
+            依托学校国际化战略，协会致力于建国际
+            交流平台，拓宽交大学国际化视野，提高学生
+            际交流能力
+            </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button15">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/公益实践/CEN.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>CEN中华创新社团</h2>         
+          <h3>★</h3>
+          <p>
+            中华创新与创业联盟（CEN）成立于2011年，由
+            公共管理与政法学院指导。CEN是一个防越中美的
+          <span id="p16">大学联盟，中华创新与创业联盟（CEN－ SWJTU）是中
+            华创新与创业联盟在中国西南地区成立的第一所
+            合作大学分部，旨在联合中美大学生採可持续
+            发展道路，并推动社会各界资源在此领域的投入
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button16">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+  </div><!-- /.container -->
+
+</main>
+{% endblock %}

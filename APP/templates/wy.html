@@ -1,0 +1,674 @@
+{% extends 'base.html' %}
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="../static/community.css">
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script type="text/javascript">
+  $(document).ready(function(){
+    let nums=32;
+    for(let i=1;i<=nums;i++)
+    {
+      $("#p"+i.toString()).hide();
+    }
+
+    for(let i=1;i<=nums;i++)
+    {
+      $("#button"+i.toString()).click(function(){
+        $("#p"+i.toString()).toggle();
+      })
+    }
+  });
+</script>
+{% endblock %}
+{% block content %}
+<main role="main">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/文化艺术/锦瑟中乐.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>锦瑟中乐团  </h2>         
+        <h3>★★★★★</h3>
+        <p>
+            锦瑟中乐团，隶属于西南交通大学大学生艺
+            术团，成立于2000年，以招收高水平艺术团学生
+        <span id="p1">和音乐表演专业的学生为主，同时欢迎热心音乐
+            艺术，有一定音乐基础和民乐演奏特长的同学加
+            入
+            我们辛動的汗水没有白付，成功演奏了《瑶
+            族舞曲》，《欢腾的节日》，《春到湘江》，《春江花月
+            夜》等中国名曲。举办了《三世凉凉一一锦瑟中
+            乐团专场音乐会》等大型音乐会，获得广大师生
+            的高度评价。
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button1">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/文化艺术/杨华.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>杨华文化  </h2>         
+        <h3>★★★★★</h3>
+        <p>
+            西南交通大学大学生艺术团扬华文化站前
+            身是扬华文化，是以扬华素质网为基地，分设骊
+        <span id="p2">渊、原创、潮汇、电影以及音乐五大模块的校园文
+            化艺术组织。2015年下半学期正式并入大学生艺
+            术团，下设摄影、美工、编辑、和新媒体部门，主要
+            负责大学生艺术团日常宜传任务，是活跃在校园
+            文化艺术事业一线的媒体组织。
+        </p>
+        <p><button class="btn btn-secondary"  id="button2">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+      
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/文化艺术/现代音乐.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>现代音乐乐团  </h2>         
+        <h3>★★★★★</h3>
+        <p>
+            现代音乐乐团由成形于90年代的校电声
+            乐队不断发展完善而成，现归属校大学生艺术
+        <span id="p3">闭，并且作为主力演出团队之一活跃在校内外
+            的各大演出活动中，乐团由涵盖了摇滚、流行、
+            金属、核、ACG、A－ cappella等多种风格的数支独
+            立乐队组成，吸纳了包括艺术特长生以及音乐
+            系相关专业和其他各专业中对现代音乐最为控
+            长的学生，并且一直致力于创作优秀的原创现
+            代音乐作品．排练场地为学校提供支持的西南
+            地区综合类大学中最高规格的现代乐团排练
+            房。指导老师是来自人文学院音乐系的王强老
+            师
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button3">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+      
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/文化艺术/新筑交响乐.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>新筑交响乐团  </h2>         
+        <h3>★★★★★</h3>
+        <p>
+            现代音乐乐团由成形于90年代的校电声
+            乐队不断发展完善而成，现归属校大学生艺术
+        <span id="p4">闭，并且作为主力演出团队之一活跃在校内外
+            的各大演出活动中，乐团由涵盖了摇滚、流行、
+            金属、核、ACG、A－ cappella等多种风格的数支独
+            立乐队组成，吸纳了包括艺术特长生以及音乐
+            系相关专业和其他各专业中对现代音乐最为控
+            长的学生，并且一直致力于创作优秀的原创现
+            代音乐作品．排练场地为学校提供支持的西南
+            地区综合类大学中最高规格的现代乐团排练
+            房。指导老师是来自人文学院音乐系的王强老
+            师
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button4">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/1896.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>1896合唱团  </h2>         
+          <h3>★★★★★</h3>
+          <p>
+              传自1896，绕梁双甲.
+              众口协声，和而不同.
+              1896合唱团是在大学生艺术团领导下的学生
+          <span id="p5">艺术团体。合唱团立足校园，放眼世界，以学
+              习和传播高品位的合唱艺术为己任，参加和举
+              办各类合唱音乐会和唱比赛等活动，为学校
+              争得了荣誉，为创建和谐校园和社会主义和谐
+              社会做出了贡献
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button5">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/氧气.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>氧气舞蹈团  </h2>         
+          <h3>★★★★★</h3>
+          <p>
+              大学生艺术团氧气舞蹈团成立于1999年，由
+              学生处指导。舞蹈团是一支年轻向上，充满活
+          <span id="p6">力与凝聚力的队伍。舞蹈团在校内外参加各种
+              大型节目晚会的演出，参加多次省市级的专业
+              比赛，为学校争取了荣誉
+              在十多年的建设过程中，舞蹈团成绩斐然。
+              先后获得四川省大学生艺术节一等奖两次、二
+              等奖一次，教育部“五月的鲜花”全国大学生
+              文艺会演优秀组织及优秀节目奖，并多次获得
+              市级、校级荣誉。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button6">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/微笑.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>微笑话剧团  </h2>         
+          <h3>★★★★★</h3>
+          <p>
+              微笑话剧团成立于1996年9月，由学生处
+              指导，主要从事创作及开展各类校园话劇表演活
+          <span id="p7">动，丰富大学生的课余生活，为其提供展示自己
+              的舞台，全力提高大学生的素质修养与综合能
+              力经过长期的探素，团队发展为集话剧、相声
+              小品等多种艺术形式为一体的戏劇团队，并在促
+              进校园文化建设和学校精神文明建设方面发挥
+              了独待的作用，话剧团的演出不仅面向校内师
+              生，还对外进行演出，《茅以升》、《精神家园》、《微
+              笑三明治》等系列原创劇目先后在省部级比赛中
+              获奖
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button7">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/羽幕舞美.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>羽幕舞美队  </h2>         
+          <h3>★★★★★</h3>
+          <p>
+              舞美队成立于1999年，护于2016年改名为
+              “羽幕舞美队＂，隶属于西南交通大学大学生艺
+          <span id="p8">术团，乘承着“服务舞台，管理舞台”的办事原
+              则，统筹艺术团以及校内各项舞台活动的舞台策
+              划、声光控制、道具星现。輝台上色彩纷呈，而舞
+              美人可以说是整场晚会的幕后英雄。每一次台前
+              的十全十美，每一盏华丽绚烂的灯光，每一声清
+              悦耳音符，都离不开舞美人对舞台效果的精益
+              求精。居于幕后的我们严请认真，平时工作时的
+              同甘共苦让我们的关系更加的密切
+              欢迎加入大学生艺术阳羽幕美队，在这里，我
+              们一起将大幕拉开，看一看幕后的风果！
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button8">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/书画.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>书画协会  </h2>         
+          <h3>★★★★★</h3>
+          <p>
+            朝书暮画，斯如骑战马。激情笔笔注点划，应知情
+            义无价。挥笔泼墨间尽展灵动、飘逸与风雅。在这
+          <span id="p9">里——他，能引一代之风流；她，能创一派之古典。
+            他，是书法；她，是国画。书画协会，创立于2002
+            年，文化积淀16载春秋！工科学校，艺术殿堂！每周
+            练笔+书画培训，教你秒变大神，作品展览+福利附送，
+            带你领略书画风采！这个九月，书协等你！<br>
+            2018级新生群487784822
+            <br><a href="../static/文化艺术/二维码/书画.jpg">添加公众号，了解更多</a>
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button9">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/辩论.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>辩论队  </h2>         
+          <h3>★★★★★</h3>
+          <p>
+              辩论队成立于1993年，由校团委指导，设队
+              长、刷队长与辩手，辯论队自成立以来，一直坚持
+          <span id="p10">在辩论中学习，在学习中领悟，在领悟的基础上
+              创新。每年协助举办传统的“新生杯”辫论赛与
+              “乐官杯＂辩论赛，主要负责对外比赛开展对
+              内的培训和教学工作，从而提高交大学子的语官
+              表达能力和逻辑思维能力，培养学生关注社会生
+              活勤思考问题的习惯，塑造学生的社会责任意识
+              和历史使命感。
+              </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button10">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/外语.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>外语协会  </h2>         
+          <h3>★★★★★</h3>
+          <p>
+              外语协会成立于1991年，由外国语学院指
+              导。协会围绕学校“两个学习中心建设”，始终
+          <span id="p11">致力于活跃交大的语言学习氛围，为增强学生语
+              言学习的兴趣做出了卓越的贡献。协会面向全校
+              开放的外语沙龙相关活动，如外教讲座，兴趣小
+              组等；组织与影视相关的英语学习活动，包括经
+              典影片的推荐影片欣赏等：协会还积极开展如
+              “交大之星”英语演讲比赛，“ I have a pen”
+              英语作文大赛等大型活动，拓展了同学们的视
+              野，增强了同学们对外语学习的兴趣。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button11">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/洛灵诗歌.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>洛灵诗歌协会  </h2>         
+          <h3>★★★★★</h3>
+          <p>
+            西南交通大学洛灵诗歌协会是一个以现代诗歌创作为主的五
+            星级文学社团，“洛水之畔，菏泽之灵”，自2002年创社至今，
+          <span id="p12">协会始终凝聚着大批文学爱好者。诗协有著名诗人柏桦教授担
+            当顾问，诗评家周东升老师担任指导老师，受惠于良好的诗歌
+            氛围，洛灵诗协已走出一批优秀的青年诗歌写作者，受到前辈
+            诗人和广大诗友的关注。目前，诗协由四个部门组织构成——编
+            辑部、宣传部、外联部和办公室，各部分工明确，在社团会长
+            团的组织下和前辈老师、学长、学姐们的引导下，共同谱奏一
+            支属于林湾村文学青年的诗歌交响曲。近年来，洛灵诗协发展
+            态势欣欣向荣。自2014年协会自创刊物《文艺负心》，在当下
+            校园诗歌中产生重要影响,另有官方运营公众号“文艺负心”和2
+            017年增设小号“洛灵诗心”；自2016年起协会承担起举办“西南
+            高校大学生诗歌论坛”的任务，至今已成功举办两届；在2017年
+            诗协以交大青年诗人诗作为本辑有“蓝谷地诗丛”，一辑十三册。
+            如今的洛灵诗歌协会立足于西南，面向全国，已成为一股不容忽
+            视的校园诗歌力量。<br>
+            2018级新生群:859283830<br>
+            <a href="../static/文化艺术/二维码/洛灵诗歌.gif">添加公众号，了解更多</a>
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button12">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/镜湖.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>镜湖文学社  </h2>         
+          <h3>★★★★★</h3>
+          <p>
+              西南交通大学镜湖文学社，创建于1996年，
+              至今已走过了20个春秋。镜湖文学社因交大九
+          <span id="p13">里校区的镜湖而得名，简称文学社。在一所以理
+              工科见长的学府中，镜湖文学社是交大最具文学
+              特色的校级社团，陪伴着交大走过了二十年的风
+              雨历程，见证了交大的发展。镜湖文学社的指导
+              单位是西南交通大学人文学院，管理单位是共青
+              团西南交通大学委员会，监督单位是西南交通大
+              学社团联合会，有自己独立的社团内部组成机构
+              和特有的运作模式。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button13">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/MARS动漫社.png" alt="Generic placeholder image" width="100" height="100">
+          <h2>MARS动漫同人社  </h2>         
+          <h3>★★★★</h3>
+          <p>
+              MARS动漫同人社成立于2003年，由校团委
+              指导。社团始终致力于动漫以及中国古风文化
+          <span id="p14">的探讨与传播。由 COSPLAY部、LIVE部、技术部、
+              原创部、漫讯部以及CV部构成，每学期均会开
+              展与动漫相关的各种活动，旨在向校内外人群
+              宣传动漫之一新兴文化，使更多的人能够了解
+              动漫，为我校乃至我国的动漫文化发展尽一份
+              微薄之力。<br>
+              2018新生群346744380
+              <a href="../static/文化艺术/二维码/MARS动漫部.png">添加公众号，了解更多</a>
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button14">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/南国.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>南国相声社  </h2>         
+          <h3>★★★★</h3>
+          <p>
+              南国相声社成立于2014年，由校团委指导。
+              协会旨在为南北相声爱好者提供一个共同交流
+          <span id="p15">学习的平台，在丰富校园文化生活，给身边的人
+              带来欢乐的同时，也致力于相声这一曲艺文化的
+              传播、普及和创新，说出逗乐南北的相声。协会每
+              学期都会组织两次专场演出，期间还有定期的内
+              部培训和与其他校级社闭合作的节目等，为校园
+              文化的建设做出一份贡献
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button15">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/演讲与口才.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>演讲与口才协会  </h2>         
+          <h3>★★★★</h3>
+          <p>
+              西南交通大学演讲与口オ协会，是致力于寻
+              找和培养热爱演讲与交际口才的人的协会。“要
+          <span id="p16">开化人的知识，感动人的思想，非演讲不可。”演
+              讲不仅仅需要语言表达能力强，同样需要有逻
+              辑，有思考，有深度，我们演协深知演讲的重要，
+              为此，老一辈人们开创了这个协会，为想要学习
+              演讲和热爱演讲的人提供学习和交流的场所。咱
+              们新演协人会不忘初心，继续演协的优秀，发扬
+              发展我们演协，向更远的地方传播演讲与口才的
+              知识，演协创立至今已有20年历史，是交大内创
+              立时间较长的协会之一，我们在今年也拿到了全
+              国百使社团的称号！
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button16">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/汉服.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>汉服社  </h2>         
+          <h3>★★★★★</h3>
+          <p>
+              汉服社成立于2013年，由人文学院指导。协
+              会创立之主旨为在交大开展汉服活动，组织交大
+          <span id="p17">同袍交流学习、做好社团传统活动、发扬汉家传
+              统文化之精华。协会主要是通过传统节日的一些
+              活动，如花朝节、端午节活动等，让今天的人们感
+              受传统，认识传统，热爱传统，并为汉服与汉文化
+              的传承和弘扬而努力。
+            </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button17">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/旅游.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>旅游文化协会  </h2>         
+          <h3>★★★</h3>
+          <p>
+              旅游文化协会成立于2002年，由机械工程
+              学院指导。协会乐于将对大自然的体验奉献给同
+          <span id="p18">学们，让大家认识到大自然的魅力，为有时枯燥
+              乏味的大学生活增添一丝乐趣。这是一个带你了
+              解旅游知识，亲身体验游山玩水的乐趣的协会。
+              一次说走就走的旅行将会是一次压力的释放，
+              个难忘的精神之旅，旅行的背后是青春激情的火
+              在烧，是梦想在自然和岁月的风尘中洗礼出的味
+              道。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button18">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/魔术.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>魔术协会  </h2>         
+          <h3>★★★</h3>
+          <p>
+              魔术协会成立于2009年，由体育部指导。协
+              会每学年承办“魔力之星”校园魔术比赛、魔术
+          <span id="p19">专场晚会两个大型校园文化活动以及一些小型
+              的魔术交流活动，为喜爱魔术的同学们提供了展
+              示的平台。协会平时为同学们提供日常的内部魔
+              术培训，提高同学们表演魔术的技术水平和舞台
+              表现能力。不论你是魔力高超的魔术达人，是類
+              心狂热的魔术爱好者，还是尚未踏入魔界的魔术
+              憧馓者，在这里，你都可以收获来自慶术的快乐。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button19">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/科幻.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>科幻协会  </h2>         
+          <h3>★★★</h3>
+          <p>
+              科幻协会成立于2004年，由机械工程学院
+              指导，这是一个凝聚广大爱好幻想类文化同学，
+          <span id="p20">扎根于幻想文化，传播科幻思维的协会。协会的
+              常规活动主要有阅读幻想类文学，观看幻想类
+              电影等，同时也鼓励各位同学进行匀想类文学
+              创作，协会也会组织参与科幻银河奖和星云奖
+              颁奖典礼，以志愿者的身份活跃在这两个中国
+              最大的幻想类盛事的舞台上。学会每年专设幻
+              想文化体验周，举办科幻类密室逃脱精品活动，
+              为同学们展现奇幻的科幻世界
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button20">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/陶艺.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>陶艺协会  </h2>         
+          <h3>★★★</h3>
+          <p>
+              陶艺协会成立于2011年，由建筑与设计学
+              院指导。在“普及陶瓷艺术知识，提高同学们动
+          <span id="p21">手实践能力，丰富学生课余生活”的目标下，协
+              会不仅锻炼了同学们的审美和动手能力，丰富了
+              大学生的课余文化生活，同时也培养了同学们的
+              原创精神，活跃了同学们的设计思维与独立思考
+              的能力。协会致力于为同学们提供学习陶艺的机
+              会，向更多的同学展示我国传统瓷文化的悠久历
+              史，为我校学生提供一个自我动手自我创新的平
+              台
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button21">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/摄影.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>摄影协会  </h2>         
+          <h3>★★</h3>
+          <p>
+              摄影协会成立于1989年，由人文学院指导。
+              协会一直秉承着为更多的摄影爱好者搭建一个
+          <span id="p22">更好更强更有趣的平台的理想而努力着，并努力
+              使更多的摄影爱好者融入进摄影协会这个大家
+              庭，与更多的摄影爱好者一起学习一起成长。协
+              会内部定期组织培训，为有兴趣的同学提供了提
+              高自己技术水平的机会，同时每学期都会组织主
+              题摄影比赛，为全校范围内热爱摄影的同学提供
+              了和志同道合的同学交流的机会。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button22">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/粤语.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>粤语社  </h2>         
+          <h3>★★</h3>
+          <p>
+              粤语社成立于2014年，由外国语学院指导。
+              协会旨在推广粵语文化，让同学了解皊南风土
+          <span id="p23">人情，拓展大学生的人文素质，丰富校园文化
+              生活，帮助对粤语感兴趣的同学学习这门语三
+              言，对同学们去粤港澳旅游、学习、工作等起
+              到一定的帮助。协会更希望以此为平台增进全
+              国各地学子的友谊，并未促进全国各地文化的
+              交流与融合做一份贡献。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button23">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/齐契古风.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>齐契古风社  </h2>         
+          <h3>★★</h3>
+          <p>
+              齐契古风社成立于2015年，是由图书馆指
+              导的学生社团，是西南交通大学古风爱好者参
+          <span id="p24">与组成的学生社团
+              齐契古风社共分为扬礼、两艺、天宫三大部
+              门，分别掌管宣传、歌会、手工制作等活动
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button24">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/LT手作.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>LT手作社  </h2>         
+          <h3>★★</h3>
+          <p>
+              本社团全名为： Little Things手作创意
+              设计社团，简称“LT手作创意设计社团”。社团
+          <span id="p25">立足于对传统手工艺的传承与创新，以坚持弘扬
+              民族文化，开拓在校大学生的设计文化视野为宗
+              旨，围绕现代手工艺设计及社会相关设计文化现
+              象开展活动，力求在物质文明发达的今天，用艺
+              术设计这样具有浓厚人文气息的学科来丰富我
+              们的精神生活・本社团的目的是以艺术设计专业
+              为基础，建立一个多学科、多专业的交流平台，通
+              过设计交流会、讲座、展览和设计咨询的方式在
+              全校范围进行手作设计宣传展示，吸引更多的热
+              爱创意、热爱设计艺术、热爱手作设计的同学加
+              入本社团，为他们提供一个相互交流、相互学习
+              的平台
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button25">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/美妆.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>美妆护肤与利益形象协会  </h2>         
+          <h3>★★</h3>
+          <p>
+              美妆护肤与礼仪形象协会成立于2016年，
+              由电气学院团委指导。协会由学校中热爱美、热
+          <span id="p26">爱生活的同学组成。协会为想要学习化妆知识、
+              规范礼仪形态但却无从下手的同学提供广阔又
+              可靠的平台，我们致力于从妆容与仪态仪表方面
+              突破传统理工学校学生固有形象，提高交大学生
+              的自信心，为交大学生就业做出贡献
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button26">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/彝文化.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>彝文化协会  </h2>         
+          <h3>★★</h3>
+          <p>
+              彝文化协会成立于2016年，由外国语学院
+              院指导。作为一个崭新的社团，以及为数不多的
+          <span id="p27">少数民族文化社团，文化协会以其蓬勃生机与
+              活力以及独特的民族文化魅力吸引了众多同学
+              积极参与。本协会积极弘扬和传播民族文化，每
+              一学年举办有“＄历新年＂“＄族文化节”，“趣
+              味运动会的相关活动”，为学校对民族文化感兴
+              趣的同学提供了一个深入了解学习民族文化的
+              平台，并积极邀请交大的全体同学积极参与相关
+              活动，丰富同学们的课余生活，拓展同学们的背
+              景知识，同时为本民族同学提供归属感，帮助他
+              们更好更快的适应大学生活
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button27">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/岗拉梅朵.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>岗拉梅朵锅庄协会  </h2>         
+          <h3>★★</h3>
+          <p>
+              协会成立于2016年，由校团委指导。成立协
+              会是为了发扬藏民族文化，让更多的同学了解藏
+          <span id="p28">民族文化特色。协会的主要活动有藏文化展览
+              节、藏文化晚会以及每周周末的锅庄舞会等。协
+              会主要有五个部门，70多个交大学子成立。开展
+              各种具有民族特色的活动不仅宣传藏民族文化，
+              提高个人对藏民族文化知识，更会让协会内部的
+              成员开拓视野、加强组织能力、丰富人际关系。提
+              炼自己的处事能力等。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button28">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/吉他.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>吉他协会  </h2>         
+          <h3>★★</h3>
+          <p>
+              西南交大吉他社成立于2016年，社团本着
+              "以乐会友"的宗旨，目的是在于提高校园音乐
+          <span id="p29">氛围，为音乐爱好者提供一个良好的交流互动的
+              平台，所以只要大家喜欢音乐，喜欢乐器，喜欢吉
+              他，不管你有没有基础，我们吉他社都热烈欢迎
+              您的加入。吉他社作为一个吉他爱好者的聚集
+              地，是大家挥酒青春，放飞梦想的地方。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button29">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/刀笔油墨.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>刀笔油画协会  </h2>         
+          <h3>★★</h3>
+          <p>
+              刀笔油画协会成立于2015年，由校团委指
+              导。协会致力于推广新兴艺术刀笔油画，简称刀
+          <span id="p30">画，即以钢刀作画，采用油彩原料，先在油布试纸
+              上涂抹，通过自制刀具在木板、布、纸上有规律地
+              副减，达到画家的理想图形效果。刀笔油画风格
+              在油画与国画之间，是一个新兴的艺术领域，协
+              会通过实践教学，不断提高同学们的艺术鉴赏能
+              力和创作能力。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button30">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/中外文化交流.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>中外文化交流与传播协会  </h2>         
+          <h3>★</h3>
+          <p>
+              中外文化交流与传播协会成立于2014年，
+              先后由国际合作与交流处和校团委指导。协会室
+          <span id="p31">友校内学生自发组建，旨在为交大中国学生与广
+              大留学生提供相互沟通、交流、学习的优质平台
+              由协会承办的“大学生国际文化艺术节”、“中
+              外文化交流之世界美食带你飞”、“交大版国际
+              达人秀”等形式多样的系列活动，成为校内中国
+              学生与留学生的互动桥梁与情感组带，让广大学
+              习切身感受多元文化的魅力
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button31">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/文化艺术/电影.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>电影协会</h2>         
+          <h3>★</h3>
+          <p>
+              西南交大电影协会成立于1996年，21年来
+              我们不忘初心，一直探求这电影的本质，聆听
+          <span id="p32">这同学的声音，希望在学习之余带给大家视觉
+              和听觉上的盛宴，引起大家无尽得遐思“
+              无论是正片文艺范儿的刚情片还是幻想得上
+              天入地的科幻片：无论是逗哏的唱念做打的喜
+              刚片还是摸爬滚打的动作片；无论是让人脊背
+              一凉的恐怖片还是失控疯狂的犯罪片：无论是
+              悲情忧思得战争片还是声色流动的歌舞片又或
+              是坚硬的牛仔情怀的西部片、你都可以提出自
+              己的建议并在图书馆放映室播出。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button32">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+  </div><!-- /.container -->
+
+</main>
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Gift{% endblock %}
+
+{% block metas %}
+{{super()}}
+<meta name="description" content="">
+<meta name="author" content="">
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="../static/sticky-footer.css">
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?c8fd0d5cb665cf048f8b9b8cbf5b960f";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>  
+{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Gift</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{url_for('main.index')}}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('main.tips')}}">小贴士</a>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            社团
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{{url_for('main.best')}}">五大组织</a>
+              <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{{url_for('main.xk')}}">学术科技类</a>
+            <a class="dropdown-item" href="{{url_for('main.ly')}}">理论研究类</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{{url_for('main.xf')}}">校园服务类</a>
+            <a class="dropdown-item" href="{{url_for('main.gs')}}">公益实践类</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{{url_for('main.tj')}}">体育健身类</a>
+            <a class="dropdown-item" href="{{url_for('main.wy')}}">文艺艺术类</a>
+          </div>
+        </li>
+    </ul>
+    <!-- <form class="form-inline mt-2 mt-md-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav>
+{% endblock %}

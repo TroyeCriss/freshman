@@ -1,0 +1,402 @@
+{% extends 'base.html' %}
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="../static/community.css">
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script type="text/javascript">
+  $(document).ready(function(){
+    let nums=19;
+    for(let i=1;i<=nums;i++)
+    {
+      $("#p"+i.toString()).hide();
+    }
+
+    for(let i=1;i<=nums;i++)
+    {
+      $("#button"+i.toString()).click(function(){
+        $("#p"+i.toString()).toggle();
+      })
+    }
+  });
+</script>
+{% endblock %}
+{% block content %}
+<main role="main">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/校园服务/国旗班.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>国旗班</h2>     
+        <h3>★★★★★</h3>
+        <p>
+          西南交通大学国旗班于2005年10月在風浦
+          校区组建成立，由校团委指导。具体负责学校
+        <span id="p1">每目例行及重大节日活动的升旗仪式，肩负
+          卫国旗尊严的神圣使命。国旗班成立至今有6
+          人获得西南交通大学学生个人最高荣“实
+          扬华奖章”，国旗班参加社会实践活动多次受
+          到中央电视台、中国青年报等媒体的专题报道，
+          并于2014年10月获得了团中央“优秀升队”
+          称号  
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button1">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/校园服务/礼仪队.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>礼仪队</h2>         
+        <h3>★★★★★</h3>
+        <p>
+          礼仪队成立于1990年，由校团委指导。礼
+          仪队主要负黄在学校的大小会议、庆典、晚会
+        <span id="p2">上担任礼仪的工作，包括颁奖、签约、接待
+          剪彩、迎宾等。礼仪队旨在提高交大学子礼仪
+          素养，营造校园文明氛围。礼仪队根据实际需
+          要，采取灵活多变的形式，积极与校内外社团
+          合作开展充满创新精神和富有创意的走秀表演，
+          以热情的态度和洋溢着的青春为交大的校园增
+          添一抹光彩。
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button2">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+      
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/校园服务/校史团.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>校园大使团</h2>         
+        <h3>★★★★★</h3>
+        <p>
+          西南交大校园大使团创建于2012年6月，
+          由校团委直属指导。校园大使是以“校园讲
+        <span id="p3">解”为主要活动内容的志愿服务团队，同时负
+          建设推护西南交大ー一“数字校园智能白助
+          导览系统”。大使闭的主要任务即为官方访问
+          西交通大学的团队“讲解”校史校情以及人
+          文景观，工作范主要涉及西南交通大学九里
+          和峨阳三校区，旨在“言行中弘扬交大精
+          神，齿间传播交大文化，行走中展现交大风
+          采”。校园大使统一经过校史、文化、礼仪、
+          形体、国际礼仪等系统培训考核。被止2017年
+          7月共计接待来自20余个国家地区的团体共计
+          35千余人。颇受校友及社会各界人士好评
+          </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button3">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/校园服务/新唐苑.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>新唐苑</h2>         
+          <h3>★★★★★</h3>
+          <p>
+            CSs创享俱乐部西南交通大学分部一一新
+            唐苑于2014年12月成立，由校团委指导。主要
+          <span id="p4">成员为西南交通大学唐立新奖学金获得者。在
+            校领导与新尚集团董事长兼总裁唐立新先生支
+            持下，新唐苑将继续秉承“实扬华，自强不
+            息”的交大精神，在学习和工作的岗位努力奋
+            斗
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button4">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/校园服务/伙食管理.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>大学生伙食管理委员会</h2>         
+          <h3>★★★★★</h3>
+          <p>
+            大学生伙食管理委员会成立于2005年，由
+            后勤集团管理。伙管会致力于为学生与食堂的
+          <span id="p5">交流搭建桥梁，向食堂反映学生意见，面向学
+            生群体推送食堂最新资讯伙管会素有交大“
+            食协会”的美称，以形式多样且有趣的各种活
+            动拉近食堂与学生的距离，切实维护学生利益。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button5">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/校园服务/招生宣传.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>招生宣传志愿者协会</h2>         
+          <h3>★★★★★</h3>
+          <p>
+            招生宣传志愿者协会成立于2014年，由招
+            生就业处指导。协会是由交大学生以“自我管
+          <span id="p6">理、自我服务、自我提升”为理念成立的一个
+            实践服务类社团，以“提高西南交大知名度，
+            让更多优秀学子选择交大”为宗旨，立足于交
+            大，致力于宣传并服务于交大。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button6">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/校园服务/校友志愿.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>校友志愿者协会</h2>         
+          <h3>★★★★★</h3>
+          <p>
+            校友志愿者协会成立于2014年，由对外合
+            作与联络处指导。“校友”简单的拆分开可以
+          <span id="p7">是“校”和“友”，“校”是一份魂牵梦绕，
+            “友”是一串青春印记，校友志愿者社团应运
+            而生。协会是由一群关心学校、积极开朗、热
+            衷志愿奉献、有服务校友经验的优秀同学组成，
+            并受到校友办的大力支持。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button7">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/校园服务/书志.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>书志·图书馆学生管理委员会</h2>         
+          <h3>★★★★</h3>
+          <p>
+            图书馆学生管理委员会成立于2014年，是求
+            属图书馆与校团委指导的学生社团，是学生民主
+          <span id="p8">参与图书馆管理和服务的组织。
+            协会主要协助图书馆日常管理、读者服务和
+            对外宣传，负贡图书馆水吧日常运营以及宣传阅
+            读推广工作。社团以立足图书馆面向交大，服务
+            师生为宗旨，协助图书馆进行日常工作，以高度
+            责任感和使命感，营造良好的图书馆学生文化氛
+            围，建立和完善图书馆与学生沟通的长效机，
+            推广经央阅读，共建书香交大 
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button8">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/校园服务/尊老爱幼.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>尊老敬老协会</h2>         
+          <h3>★★★</h3>
+          <p>
+            尊老敬老协会成立于2013年，由离退体处指
+            导。协会由一群关爱老人，关心交大，关怀老教
+          <span id="p9">师老校友的热心交大学子们组成。尊老敬老协会
+            的服务群体是交大的老教师、老校友，对他们进
+            行志愿服务。帮助冇需要的老师学习智能手机，
+            电脑以及一些软件的操作，协助离退体处举办活
+            动，如五一势动节游园活动，重阳节活动等
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button9">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/校园服务/读书.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>读书俱乐部</h2>         
+          <h3>★★★</h3>
+          <p>
+            读书俱乐部由图书馆支持，是为广大喜欢阅
+            读的同学服务的社闭。我们乘持以书会友，在阅
+          <span id="p10">读中寻找朋友的观念，希望在书里找到安慰我们
+            灵魂的东西，找到我们的表情
+            读书是一件具有深度，广度，厚度的事，也
+            是自由的事，是独立的事，更是一件发现的事。
+            加入我们，感受这个世界，感受自己的心跳・
+            吾翠之道，未入岂能知晓，交大读书会，来
+            了才知道。加入我们，我们会帮你发现自我的闪
+            光点，让你发现美并创造美，让你的大学生活如
+            理想般充实，快乐。年华里的倒影，你的生活将
+            会在哪里？加入我们吧！在这你将得到最美丽的
+            诠释。
+          </span> 
+          </p>
+          <p><button class="btn btn-secondary"  id="button10">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/校园服务/纸鸢.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>纸鸢书院交大分社</h2>         
+          <h3>★★★</h3>
+          <p>
+            纸鸢书院西南交通大学分社成立于2015年，
+            指导单位是共青团西南交通大学委员会。分社在
+          <span id="p11">总社的领导下主要负责挖堀、优选北校内利于学
+            生健康成长的活动项目。真正帮助大学生创造自
+            段价值，实现人生梦想。纸鸢书院相倌青年具有
+            创造和开脱的能量，只要插上翅膀就能展翅飞期
+            纸书院用行动支持年轻人。让开展活动成为逐
+            梦的起点，让纸书院成为筑梦的平台，把理想
+            化作现实。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button11">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/校园服务/宿舍管理.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>宿舍管理委员会</h2>         
+          <h3>★★★</h3>
+          <p>
+            宿舍管理委员会成立于2005年，山后勤集
+            用指导。协会本着服务同学。锥护同学权盈
+          <span id="p12">实现民主管理的旨，乘承“倒导西交
+            大健康、和、活波的宿含文化”的理念，认
+            真履行“桥柴。直督、文化“的工作职能。通
+            过开展各项有益的宿舍管理活动，加强公该园
+            区内的学生管理，丰富宿舍文化生活，为营建
+            个安全。新适、有利学生身心健康的学习与
+            生活环境而努力
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button12">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/校园服务/校史馆.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>校史馆讲解团</h2>         
+          <h3>★★</h3>
+          <p>
+            西南交通大学校史宙讲解团于2016年11月
+            成立，由校史馆指导。主要负责校史馆内的各
+          <span id="p13">项接特、校史讲解工作，包括校内外师生、校
+            友及各界来宾等。旨在传承交大传统，弘扬交
+            大精神，作为校史的讲解者、传播者，让更多
+            的人走进校史，了解校史，了解交大辉煌的发
+            展历程和一路走来取得的各项成就
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button13">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/校园服务/晨读.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>晨读社</h2>         
+          <h3>★★</h3>
+          <p>
+            晨读协会纳新啦！起早没事做吗？来晨读吧！
+            对英语特別热受吗？来晨读吧！找不着人聊天吗？
+          <span id="p14">来晨读吧！我们可以陪你一起学习，一起闹，一起
+            聊天，一起笑…晨读与我一起，这里有不一样的
+            精彩，期待你们的到来。
+            晨读协会剑立于2013年，由校团委指导，旨在
+            激发大家早起学习的热情，提高每一天学习的效率，
+            提高自信，培养大家征服自我，坚持不懈，追求卓
+            越的精神，为大家提供一个锻炼自我，提升自我，
+            展示自我的平台。我们的倍仰：坚持别人不能坚持
+            的坚持，收获别人不能收获的收获。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button14">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/校园服务/计财.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>计财处助理团</h2>         
+          <h3>★★</h3>
+          <p>
+            本社团成立于2016年9月，严格执行我校
+            杜团管理规定的各项要求，为服务学校教职员
+          <span id="p15">工及学生、丰富我校大学生业余文化生活而努
+            力，配合社团联合会，共同建设我校积极、上
+            进、和谐的社闭文化，办出自己的特色，办出
+            自己的水平。并严格遊守宪法、法律，遊守学
+            校纪和团委的规定，遵守社会道德风尚
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button15">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/校园服务/学术教学信息.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>学生教学消息站</h2>         
+          <h3>★</h3>
+          <p>
+            教务处航下学生教学信息站成立于2013年，
+            主要负在教务处指导下组织学生助理收集、整
+          <span id="p16">合、处理教学伯息，并将教学信息、学风情况
+            学生意见反馈至学校教学管理部门，山相关部
+            分析和处理。也承担部分学校机构的助勤正作。
+            教学信站是学生学习，老师授业，学校进行教
+            育管理的大数据信息流节点，是学生参与学校管
+            理，特別是学业管理的平台之一。 
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button16">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/校园服务/文物管理.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>文物管理协会</h2>         
+          <h3>★</h3>
+          <p>
+            文物管理协会成立于2015年，由资产管理
+            处指导。协会主要管理负责学校的建筑小品（交
+          <span id="p17">大历史杰出校友的石像、各式具有象征意义的
+            小建筑及各届校友赠送母校的石像），对各类
+            建筑小品进行定期的维护、清理；宣传交大悠
+            久历史，向全校师生普及历史杰出校友的贡献
+            事迹，传播爱校意识，传承“实扬华，自强
+            不思”的交大精神。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button17">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="" alt="" width="100" height="100">
+          <h2>砺行社</h2>         
+          <h3>★</h3>
+          <p>
+            西南交通大学砺行社于2017年成立，由学生
+            处资助管理中心指导。协会是由一群热爱公益
+          <span id="p18">服务交大的爱心学子和自强不息的受助同学共同
+            组成的实践服务社团。协会负责协助和承办学生
+            处资助管理中心的各大助学活动；以“好好过”
+            公益月为平台，开展“交通、教育、环保”主题
+            公益活动，宣传“受助一自助一助人”理念、帮
+            助受助同学提高素质，为爱心学子提供公益实践
+            平台。传承“果毅力行，忠恕任事”的校训理念，
+            格守“自强不息，行致远”的向上精神。
+          </p>
+          <p><button class="btn btn-secondary"  id="button18">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/校园服务/唐臣工作室.jpg" alt="" width="100" height="100">
+        <h2>唐臣工作室</h2>         
+        <p>
+          唐臣工作室是交大学生自发成立的一个组织，其成立
+          的目的是为单位以及同学们提供精准细致的就业服务，
+        <span id="p19">打造交大就业品牌，
+          推动同学们领导力发展。
+          唐臣工作室的“唐臣”二字由来于我校知名校友茅以升先生的字,寓意着工作室成员都会沿袭茅先生身上可贵
+          的，专注求实、团结协作的工作精神，不断以严谨、敬业、务实的要求贯穿每一天的工作。
+          唐臣工作室的工作:
+          协助用人单位发布招聘信息
+          与HR交流沟通、对接招聘公
+          司
+          协助公司预定宣讲会、笔试
+          面试场地
+          为学生提供更多了解就业信
+          息的渠道
+          承办特色招聘活动
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button19">View details &raquo;</button></p>
+    </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+  </div><!-- /.container -->
+
+</main>
+{% endblock %}

@@ -1,0 +1,583 @@
+{% extends 'base.html' %}
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="../static/community.css">
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script type="text/javascript">
+  $(document).ready(function(){
+    let nums=29;
+    for(let i=1;i<=nums;i++)
+    {
+      $("#p"+i.toString()).hide();
+    }
+
+    for(let i=1;i<=nums;i++)
+    {
+      $("#button"+i.toString()).click(function(){
+        $("#p"+i.toString()).toggle();
+      })
+    }
+  });
+</script>
+{% endblock %}
+{% block content %}
+<main role="main">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/体育健身/篮球.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>篮球协会  </h2>         
+        <h3>★★★★★</h3>
+        <p>
+          篮球协会成立于1982年，由体育部指导。每
+          学期举办各式各样的篮球活动，旨在使更多的同
+        <span id="p1">学体会到篮球的魅力与团队精神的重要性，丰富
+          交大学子的体育文化生活。篮球协会通常在每学
+          年的上半学期举办西南交大供乐部篮球联赛，这
+          是一个属于交大篮球爱好者自己的正规联赛：下
+          半学期则会举办西南交大院系篮球赛，各个学院
+          的队伍在这里奋勇拼搏，用青春与激情收获胜利
+          与友谊。此外，由篮球协会承办的CUBA全国大学
+          生篮球联赛四川省预赛作为我校一年一度的重头
+          戏，深得同学们喜爱。篮球协会，分享乐趣，享
+          受乐趣。
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button1">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/体育健身/街舞.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>街舞协会  </h2>         
+        <h3>★★★★★</h3>
+        <p>
+          Just Dancef街舞协会成立于2005年，由体
+          育部指导。协会致力于推广校园内街舞文化，
+        <span id="p2">为喜欢街舞的同学搭建一个交流学习的平台。
+          协会自成立以来，组织并参与了众多校内外街
+          舞演出，获得了校内外的一致好评。协会每年
+          定期开展街舞专场晚会等活动，丰富交大的校
+          园文化。同时协会曾参加欢乐谷国际街舞争霸
+          赛，并获得交大赛区比赛冠军。
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button2">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+      
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/体育健身/体育舞蹈.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>体育舞蹈协会  </h2>         
+        <h3>★★★★</h3>
+        <p>
+          体有蹈协会成立于1999年，由体育部指
+          导，成立至今，体育舞留协会在历届会员的不
+        <span id="p3">努力和交大学子的热情支持下，举办了多项
+          体育舞蹈赛事，如国标舞大赛，周末舞会等，
+          遇速成为交大众多社团中的骨干社团，多次获
+          得“全校优秀社团”、“明星社团”等荣誉称
+          号．协会主要通过周末培训和舞会普及体育
+          每图，培养更多体育舞留爱好者，弘扬社交舞
+          文化，全面提高交大学生的素修养 
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button3">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+      
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/体育健身/武术.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>武术协会  </h2>         
+        <h3>★★★★</h3>
+        <p>
+          武术协会成立于2011年，由体育部指导。协
+          会由交大众多武术爱好者组成，自成立以来，武
+        <span id="p4">协乗承勤奋务实的作风，以传播与习练优秀的武
+          术文化为目的，习练集技击制敌、养生健体、修
+          身养性于一体的真正优秀的中国功夫，坚持每天
+          练习，风雨无阻。协会主要训练拳法为梅花粧，
+          以恬释道三家为理论指导，包括五势粧步，成养
+          对练，各路兵器等，由基础开始逐步深入，内外
+          兼修，形神兼备。
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button4">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/双截棍.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>双截棍协会</h2>         
+          <h3>★★★★</h3>
+          <p>
+            双节棍协会成立于2011年，由体育部指导。
+            双节棍协会以弘扬“强身健体，弘扬中华武
+          <span id="p5">术”的棍道精神，开展目常棍术训练，以武会
+            友，积极参加校园内外的活动：高校联赛，内
+            部交流，向国际友人展示中国人的风采。作为
+            双节爱好者，在训练过程中力求将力量和优
+            的动作结合起来，向大家展示出双节棍的刚
+            柔并济之道。特别地，在成员上组成上，不仅
+            有热衷于练棍的男生，也有积极参与双节棍运
+            动的女生，男生的阳刚之气和女生的柔情相互
+            交融，为双节棍协会注入了别具一格的活力.<br>
+            <a href="../static/体育健身/二维码/双截棍qq.jpg">添加QQ群，了解更多</a><br>
+            <a href="../static/体育健身/二维码/双截棍微信.png">添加公众，了解更多</a>
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button5">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/足球.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>足球运动管理联合会  </h2>         
+          <h3>★★★★</h3>
+          <p>
+            足球运动管理联合会成立于2015年，由前
+            足球协会和前五人制足球协会合并而成，指导
+            单位为体育部。绿茵场是我们的天地，裁判哨
+          <span id="p6">是我们的音符。每年9月，协会将“新生杯”作
+            为迎接大一新生的见面礼：10月，有“院系联
+            赛”展示交大各大院系的足球风采；次年4月，
+            是球友们在“俱乐部联赛”火拼的季节；5月
+            更有“实况足球竞技比赛”的旑峰对决。意气
+            风发的期待，水不言败的姿态!
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button6">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/磐石.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>磐石社  </h2>         
+          <h3>★★★★</h3>
+          <p>
+            成立于2012年10月，由体育部指导。协会
+            秉承“自然自由自在，如云如山如海”的精神
+          <span id="p7">以徒步，攀岩，登山，攀冰为核心，努力推广
+            安全负责的户外运动，引导会员在与自然交流
+            过程中，完善自我人格，培养坚初的意志，强
+            健的体魄和不断开拓进取的精神。协会通过组
+            织“西南交大校园攀岩赛”，“西南交大户外
+            技能大赛”等活动，在同学中普及户外知识，
+            以及增强同学户外责任感。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button7">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/健美操.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>健美操协会  </h2>         
+          <h3>★★★★</h3>
+          <p>
+            健美操协会成立于2000年10月，是一
+            个以健美操为主要活动内容的体育类社团
+          <span id="p8">协会自成立以来，以提高会员综合素为日
+            标，乗承“运动健康·快乐”的旨，
+            传扬体育人不抛弃、不放弃的精神。协会在
+            校团委与校体育部领导下，响应“三走”号
+            召，以会员为核心，借助校健美操队优势资
+            源、善用新媒体平台，开展了特色鲜明的线
+            上线下活动，为营造良好的运动舞蹈氛国
+            繁荣校园体育文化贡献了一份力量。
+            <a href="../static/体育健身/二维码/健美操qq二维码.jpg">添加新生群，了解更多</a>
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button8">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/排球.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>排球协会  </h2>         
+          <h3>★★★</h3>
+          <p>
+            排球协会成立于1999年，由体育部指导
+            协会以锻炼培养富有新时代精神大学生
+          <span id="p9">为目标，迈着坚实的脚步前进着。成立伊始
+            到现在，协会在历届学生于部的努力下和交
+            大学子的参与和支持下，着培养了会员的
+            组织及团结协作能力，提高了会员们的排球
+            技能，增强了会员的身体素质，使排球的影
+            响力逐步扩大，并多年被评为优秀社团。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button9">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/自行车.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>自行车协会  </h2>         
+          <h3>★★★</h3>
+          <p>
+            自行车协会成立于2012年，由体育部指导。
+            协会旨在通过自行年运动为广大会员建造出
+          <span id="p10">个学习、交流、锻炼与收获的平台，锻炼会员
+            “奋进、挑战、超越”的品质，达到学习、服
+            务、锻炼”的目的。协会定期开展西南地区大
+            学生山地自行车交流赛、一元”骑行活动等多
+            项活动，为同学们提供更多参与课外体育锻炼
+            的机会，以此来提高大学生综合素质，丰富交
+            大的校园文化。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button10">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/棋牌.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>棋牌协会  </h2>         
+          <h3>★★★</h3>
+          <p>
+            棋牌协会成立于2005年，由体育部指导。棋，
+            修身养性；牌，解闷闲情。人生如棋，步步惊心
+          <span id="p11">或又如牌，恰然自得。协会旨在服务于各位棋牌
+            爱好者，棋局人生，每一次激烈博弃都将心情彰
+            辨。协会举办的“新生棋牌挑战赛”、“成都象
+            棋联邀请赛”、以及热门的“三国杀挑战赛”，
+            广受同学的欢迎与喜爱。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button11">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/网球.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>网球协会  </h2>         
+          <h3>★★★</h3>
+          <p>
+            网球协会成立于2003年，由体育部指导。
+            协会旨在为广大喜愛网球运动的朋友提供一个
+          <span id="p12">相互认识、互相学习、共同提高的平台，并以
+            网球竞赛类活动为纽带，使同学们有机会接近
+            网球这项时尚运动，培养优雅的兴越爱好，充
+            分享受网球所带来的乐趣，在运动和锻炼中但
+            导积极、向上的精神面貌和健康、偷快的生
+            活方式，让“贵族运动”不再過远.
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button12">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/游泳.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>游泳协会  </h2>         
+          <h3>★★★</h3>
+          <p>
+            游泳协会成立于2005年，由体育部指导。
+            协会旨在团结我校的游泳运动爱好者，通过举
+          <span id="p13">办游泳培训、游泳比赛、游泳知识竞赛等活动，
+            提高了社团内外广大学生的游泳技能，增强了
+            大家的公平竞争意识，丰富了同学们的业余生
+            活，促进交大学子的全面发展。以游泳会友，
+            泳协举办的历次活动加强了我校游泳爱好者们
+            之问的沟通与交流
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button13">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/跆拳道.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>跆拳道协会  </h2>         
+          <h3>★★★</h3>
+          <p>
+            跆拳道协会成立于2005年，由体育部指导。
+            跆拳道（ Taekwondo）是起源于中国发展在韩国的
+          <span id="p14">一项主要使用手及脚进行格斗或对抗的武术运
+            动，是现代奥运会正式比赛项目之一。眙（TAE），
+            意为以脚踢：拳（KWON，以养头打击：道（DO），
+            则是代表道行、礼仪修练的艺术。协会以“礼义
+            廉耻、忍耐克己、百折不屈”的跆拳道精神为基
+            础，在交大热爱跆挙道的同学的努力下正在不断
+            发扬。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button14">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/轮滑.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>轮滑协会  </h2>         
+          <h3>★★★</h3>
+          <p>
+            Dreamhigh轮滑协会成立于2010年，由体育
+            部指导。协会由一群热爱轮滑、热爱背存、热爱
+          <span id="p15">生活的大学生组成，代表着活力、背存与激情。
+            协会积极组织和参加学校内外的各项轮滑推广活
+            动，并取得了优异的成绩，走出了多位专业轮滑
+            乐部的队员和参加国家级比赛的选手，并现身
+            于各大活动赛事，经常在各种高校轮滑活动中
+            名。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button15">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/羽毛球.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>羽毛球协会  </h2>         
+          <h3>★★★</h3>
+          <p>
+            羽毛球协会成立于1992年，由体育部指导。
+            协会旨在团结校内的羽毛球爱好者，并在全校范
+          <span id="p16">围内推广羽毛球运动。协会以“羽你同心，携徐
+            此行”为口号，通过供乐部羽毛球赛、院系羽毛
+            球赛等各项羽毛球赛事，号召同学们积极参与体
+            育锻炼，以此来提升同学的身体综合素质，促进
+            交大的校园文化建设，同时也为交大羽毛球事业
+            的发展贡献一份力量。
+            </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button16">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/台球.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>台球协会  </h2>         
+          <h3>★★★</h3>
+          <p>
+            台球协会成立于2011年，由体育部指导。协
+            会致力于在交大校园内推广台球这一项集战场竞
+          <span id="p17">技、智慧较量、艺术表演于一身的高雅室内绅士
+            体育运动。协会自成立以米，举办过多次大型活
+            动：大师赛、俱乐部赛、八球女子赛、院系杯比
+            赛等，在校内外影响广泛，受到广大台球爱好者
+            的鼎力支持。在对外交流方面，协会曾多次参加
+            省内大型高校比赛并取得优异成绩。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button17">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/品乓球.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>乒乓球协会  </h2>         
+          <h3>★★★</h3>
+          <p>
+            乒乓球协会成立于1993年，由体育部指导
+            协会组织凝聚校内的乒乓球爱好者，每年定期举
+          <span id="p18">办包括新生赛、院系赛、俱乐部赛在内的多项乒
+            乓球比赛。协会以“以球会友”为宗旨，为全校
+            乒乓球爱好者提供一个交流学习的平台，提高同
+            学们乒兵球的竟技水平，发扬国球精神。协会在
+            努力丰富学生业余生活的同时，也为我校体育事
+            业贡献自己的力。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button18">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/乐悠悠.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>乐悠悠悠球社  </h2>         
+          <h3>★★</h3>
+          <p>
+            乐悠悠悠球社成立于2015年，由体育部指导。
+            悠悠球不仅仅是世界第二古老的玩具，更是世界上
+          <span id="p19">花式最多、最难、最具有观赏性的手上技巧运动之
+            一。协会旨在通过普及悠悠球的活动，让同学们不
+            仅可以从紧张的生活学习中获得放松，更能从中探
+            综、练、开发自己的创造性思维，发掘不一样的
+            悠悠球表演。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button19">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/瑜伽.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>瑜伽协会  </h2>         
+          <h3>★★</h3>
+          <p>
+            瑜伽协会成立于2013年，由体育部指导。协
+            会旨在发展学生的兴趣爱好，增强学生的身体素
+          <span id="p20">质，提升学生的外在与内在的气质，通过练习瑜
+            伽减轻学习中和生活中的压力，让学生拥有苗条
+            修长的身材，使精神得到极大的调整，使心灵
+            得到净化。为了提高大家的瑜伽技能以及对于瑜
+            伽的理解与体会，每周都有一次至少ー个小时的
+            队内训练。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button20">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/空手道.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>空手道协会  </h2>         
+          <h3>★★</h3>
+          <p>
+            空手道协会成立于于2013年，由体育部
+            指导。协会旨在传承、发扬武道精神。协会
+          <span id="p21">不仅让会员们在深切体会武道精神的同时强
+            身健体，也为全校广大空手道爱好者提供
+            个学习交流的平台，丰富学生校园生活，开
+            展武术交流以及空手道协会风采show活动，
+            提高协会在全校内的知名度。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button21">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/花样跳绳.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>花样跳绳协会  </h2>         
+          <h3>★★</h3>
+          <p>
+            花式跳绳协会成立于2014年，由体育部指
+            导。协会主要以组织日常花式跳绳训练与开展比
+          <span id="p22">赛和表演活动的方式，提升同学们的协调能力，
+            身心健康和团结协作精神，丰富课余生活，锻炼
+            强健体魄，大力发展和推广花式跳绳运动，带领
+            交大同学跳出健康，跳出活力，跳出精彩人生！
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button22">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/太极拳.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>太极拳协会  </h2>         
+          <h3>★★</h3>
+          <p>
+            太极养协会成立于2013年，由体育部指导。
+            协会成立初裏是为了给热爱太极运动的同学搭
+          <span id="p23">建一个平台，通过太极这一运动方式起到强身
+            健体、镀炼养生的作用，让同学们一起学习
+            起交流、共同进步，既业扬了传统文化，又加强
+            了自身的修养
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button23">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/柔道.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>柔道协会  </h2>         
+          <h3>★★</h3>
+          <p>
+            柔道协会成立于2014年，由体育部指导。乘
+            道（Jodo，じゅうどう）是一种以摔法（投技）
+          <span id="p24">和地面技（寝技）为主的格斗术，它不仅是一种
+            行之有效的自卫技能，而且是一项引人入胜的体
+            有运动。道不但可以增强人们体质，而且有益
+            于精神锤炼，可以提高人的觉、应变能力，加
+            强自信心和意志力。加入柔道协会，挑战自我，
+            学会尊重，感受柔道的荣耀
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button24">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/射声射箭.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>射声射箭社  </h2>         
+          <h3>★★</h3>
+          <p>
+            等闲飞控秋原上，独向寒云试射。射箭是
+            有着悠久传统历史和深厚文化底的体育活动
+          <span id="p25">也是现代奥林匹克赛事中颜受关注的竞技项目
+            射声弓箭社是学校广大射箭运动爱好者的兴
+            趣平台。不论你是美猎、使统、竟技反曲还是现
+            代复合弓的使用者，都可以在这里找到志同道合
+            的朋友，交灌技艺、自我提升。
+            我们提供独立的校内场馆进行训练：会组织
+            面向全校学生的射箭比赛，井情添加花式射箭
+            项日。时，我们与汉服社、国防教育协会有长
+            期稳定的合作关系，在此二协会的活动中也友情
+            客中，如花朝节的射箭表活动.
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button25">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/健身.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>健身协会  </h2>         
+          <h3>★</h3>
+          <p>
+            健身协会成立于2014年，由体育部指导。
+            办会坚持“团结，进取，求实，创新”的理念，
+          <span id="p26">为交大热爱健身的同学提供一个交流平台。生
+            命在于运动，健身运动可以减少脂肪，增强肌
+            肉，提高身体素质，促进新陈代谢功能，培养
+            良好的运动习惯，可以改善睡眠质量，增加身
+            体弹性和柔软度，强化及美化肌肉，增加肌肉
+            耐力。健身不仅可以増添活力，更能够收获纯
+            真的友谊。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button26">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/田径.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>田径协会  </h2>         
+          <h3>★</h3>
+          <p>
+            田径协会成立于2015年，由体育部指导，协
+            会每学期举办各式各样的田径活动，片在强身
+          <span id="p27">体、挑战自我，丰富交大学子的课余生活。协会
+            拥有田径专业队的训练水平，为想要了解田径运
+            动的同学们提供参与田径运动的条件。协会积极
+            主动地开展了丰富的活动，充分展现出交大学子
+            的风采和精神面貌，所取得的良好成绩为交大
+            得了來养。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button27">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/电竞.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>I&F电子竞技协会  </h2>         
+          <h3>★</h3>
+          <p>
+            西交通大学I＆F电子竞技社是西交通大
+            学校团委，社团联合会管理下的第99个学生社
+          <span id="p28">田。社团成立于2015年9月，社团以宣传正确的
+            电竞观念为日标。希为大学生树立正确的电竞
+            理念。让大学生正确的区分电子竟技与游戏。使
+            大学生热爱生活，快乐游戏：同时保持心中対于
+            世界的热情，探索未知事物的勇气，面对困难不
+            放年的正能量精神。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button28">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/体育健身/滑板.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>滑板协会</h2>         
+          <h3>★</h3>
+          <p>
+            滑板协会成立于2015年，由公共管理与政法
+            学院指导。协会举办各种滑板活动，旨在使更多
+          <span id="p29">的同学体会到滑板的魁力，从中获得身心的愉悦，
+            富交大学子的体育文化生活。协会通常在每学
+            年的上半学期举办西南交通大学滑板技术交流活
+            动，行在与全成都的滑手进行技术交流，提升我
+            们自身的水平：下半学期则会举办西南交通大学
+            世界滑板日滑板大赛，各种形式的滑板比井将在
+            此上演，届时也会对其他滑板愛好者进行集中教
+            学
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button29">View details &raquo;</button></p>
+       </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+  </div><!-- /.container -->
+
+</main>
+{% endblock %}

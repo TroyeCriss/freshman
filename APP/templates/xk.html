@@ -1,0 +1,518 @@
+{% extends 'base.html' %}
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="../static/community.css">
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script type="text/javascript">
+  $(document).ready(function(){
+    let nums=25;
+    for(let i=1;i<=nums;i++)
+    {
+      $("#p"+i.toString()).hide();
+    }
+
+    for(let i=1;i<=nums;i++)
+    {
+      $("#button"+i.toString()).click(function(){
+        $("#p"+i.toString()).toggle();
+      })
+    }
+  });
+</script>
+{% endblock %}
+{% block content %}
+<main role="main">
+  <div id="pmyCarousel" class="carousel slide" data-ride="carousel">
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/学术科技/基础数学.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>基础教学协会</h2>
+        <h3>★★★★★</h3>
+        <p>基础数学协会成立于2010年，由数学学院指导，
+          点线面勾勒大千世界，加减乘除演绎无限苍，
+        <span id="p1">基础数学以学术为主打，以追求优秀为主体,
+          以“数学学习中心建设为中心，以为交大培出
+          更多科研人才为目标。这里有各路名师的指点帮
+          助，更有优秀学长们的倾心辅导；这里有逸趣横
+          生的数学竟赛，更有活跃开放的学术氛围：这里
+          不仅充满着有爱还有因数学面起的甜蜜，基础数
+          学不仅是数学大神的集地，也是给想要提高数
+          学能力的具有无限潜力的交大学子的平台</span>
+          </p>
+        <p><button class="btn btn-secondary"  id="button1">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/学术科技/数学建模.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>数学建模协会</h2>
+        <h3>★★★★★</h3>
+        <p >
+          数学建模协会成立于1999年，由数学学院
+          指导。历经十九年的风雨，协会先后获得了
+        <span id="p2">“西南交通大学优秀学生社团”、“十佳学生
+          闭”、“五一高校建模联赛优秀组织奖”
+          “四川省百家魅力社团及领袖社团”、“小平
+          科技创新团队”等荣誉称号；协会更是在2017
+          年获得团中央评选的全国“最具影响力的科技
+          类社杜团荣誉称号
+          协会旨在为同学营造良好的科创文化氛
+          围，增强学生建模意识，提高解决实际问题的
+          能力。协会也逐渐发展为全校知名的社团，为
+          交大的建模培养了大量的人才。协会承接教务
+          处、数学学院、校团委多项项日，并取得了不
+          错的成就协会逆循人才培养人才、人才带动
+          人オ的原则，培养出了一大批优秀的人才，在
+          众多国际级、国家级等大型比赛中获住
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button2">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/学术科技/三海原.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>山海原经典网</h2>
+        <h3>★★★★★</h3>
+        <p>
+          山海原经典网，成立于2015年的“世界读书
+          日”，是在西南交通大学徐飞校长大力個导下成
+        <span id="p3">立的经典阅读专题推广及交流平台，旨在引导全
+          校师生回归经典之文，阅读经典之书，感悟经典
+          之意，营造更加浓郁的校园阅读氛围。
+          山海原经典网创办以来短短两年，网站徵信
+          十四个版块就已累计推送了全校师生原创文章六
+          百余篇，先后荣获了“全国高校优秀网站”和“全
+          国大中专学生最具影响力新媒体社团”称号，逐
+          断吸引了许多交大文学背年的关注。山海原经典
+          パ已经成为西南交通大学推广经典阅读的重要阵
+          地
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button3">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/交通科技.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>交通运输科技协会</h2>
+          <h3>★★★★</h3>
+          <p>
+            灌输文化尚交通，文轨车书郅大同。交通
+            运输科技协会成立于2008年5月，由交通运输
+          <span id="p4">  与物流学院指导。协会立足交通科技，放眼全
+            方位智能化大交通，依托交大交通运输工程学
+            科平台优势，旨在培养本科生的科技创新能
+            力，提高学生综合素质，为广大交通科技爱好
+            者提供一个良好的学术交流和创新创业平台。
+            协会服务并积极参与每一届西南交通大学大学
+            生交通科技大赛，长期培养大量交通科技人才
+            经过十年的积淀和发展壮大，协会现已成为
+            个集学术创新、知识普及、文化传播、兴趣交
+            流为一体的综合性协会。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button4">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/测量.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>测量协会</h2>
+          <h3>★★★★</h3>
+          <p>
+            测量协会成立于2003年，山地球科学与环境
+            工程学院指导。协会着力于对测量科学技术专业
+          <span id="p5">知识的了解，为会员营造和谐愉快的社团活动氛
+            围，提供充分展示个人能力的平台。协会自成立
+            以来，就以测量知识系列讲座，测量仪器培训
+            测量技能大赛，三维模型设计大赛等优异的内外
+            部活动数次登顶“西南交通大学十住社团”
+            </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button5">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/投资理财.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>投资理财协会</h2>
+          <h3>★★★★</h3>
+          <p>
+            投资理财协会成立于2006年，由经济管理
+            学院指导。你不理财，财不理你，在这个经济
+          <span id="p6">高速发展的今天，拥有投资理财理念，学会一
+            些投资理财方式是十分必要的。投资理财协会
+            以服务全体交大学子，培养大家的投资理财理
+            念，帮助大家掌一些简单的投资理财方式为
+            目的，开展一系列相关的活动，如举办模拟炒
+            股大赛，邀请一些专业的老师和经验丰富的学
+            长学分享一些投资理财经验，举办投资理财
+            知识讲座等。 
+          </span>           
+          </p>
+          <p><button class="btn btn-secondary"  id="button6">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/ACM.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>ACM协会</h2>
+          <h3>★★★★</h3>
+          <p>
+            ACM Chengdu Chapterl西南交通大学分会成
+            立于2004年，由信息科学与技术学院指导。协
+          <span id="p7">会致力于打造交大算法爱好者学习，练习和提
+            高算法能力的天堂，营造轻松的会员交流环境
+            增多学生与名师面对面交流讨论的机会。自
+            2004年成立以来，协会承办的“新秀杯”和
+            “校赛”已成为交大的品牌活动。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button7">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/物理协会.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>物理协会</h2>
+          <h3>★★★★</h3>
+          <p>
+            物理协会成立于2007年，由物理实验中心
+            指导。协会致力于组织与物理相关的竞赛和培
+          <span id="p8">训以及举办物理学术讲座、大学物理课程答疑
+            等活动。截至目前，协会已成功举办十一届物
+            理实验竞赛，三届物理学术竟赛，同时组织相
+            关国赛培训活动，选拔出一批优秀学生，代表
+            学校参加国赛并获得绩
+          </span>  
+          </p>
+          <p><button class="btn btn-secondary"  id="button8">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/大学生创造.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>大学生创造学会</h2>
+          <h3>★★★</h3>
+          <p>
+            大学生创造学会成立于1998年，由心理研
+            究与咨询中心指导。回首19年的光辉历程，大
+          <span id="p9">学生创造学会始终秉承着“做与生活相结合的
+            创造”的核心理念，在所有成员的共同努力下
+            不断发展壮大，取得了一系列可喜的成绩。协
+            会在2000－2001年举办了交大首届航模大赛，道
+            请知名教授普及创造知识，与中
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button9">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/机器人.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>机器人协会</h2>
+          <h3>★★★</h3>
+          <p>
+            机器人协会成立于2007年，由工业中心指
+            导。协会汇聚全校热爱机械设计与科技创新的
+          <span id="p10">学生，为机器人爱好者搭建交流平台，共同学
+            习机器人知识。协会旨在为在校机器人爱好者
+            实际操作和自主研发创作机器人提供服务于指
+            导。由协会承办的精品活动“机器人大赛
+            切实帮助大学生提高务实创新的思维能力和动
+            手制作能力。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button10">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/法律.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>大学生法律协会</h2>
+          <h3>★★★</h3>
+          <p>
+            大学生法律协会成立于1996年，由公共管
+            理与政法学院指导。协会以法律知识学习和参
+          <span id="p11">与法律实践活动为主要内容，致力于促进校园
+            文化建设，提高会员法律知识水平和务实能力。
+            协会的理念是：路蓝缕，走过的是法协人不
+            甘落后、敢为人先的道路；风丽兼程，不变的
+            是法协人持之以恒、矢志不渝的追求
+          </span>  
+          </p>
+          <p><button class="btn btn-secondary"  id="button11">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/PPter.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>PPTer协会</h2>
+          <h3>★★★</h3>
+          <p>
+            西南交通大学交大 Ppter协会是在学校团委领
+            导下的校级学生社团，是学生学习、交流PT制作
+          <span id="p12">的平台和载体。交大 Ppter协会致力于提升全校学
+            生PPT制作技能，促进学生间的交流合作，实现共
+            同学习、共同进步的目的，同时与社会PT设计公
+            司联系紧密，提供相关学习培训以及慧职机会
+            <br>2018新生群：365613522
+            <br><a href="../static/学术科技/二维码/PPter.png">添加公众号，了解更多</a>
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button12">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/大学生生命.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>大学生生命科学学会</h2>
+          <h3>★★★</h3>
+          <p>
+            大学生生命科学学会成立于2016年，由生
+            命学院指导。生命不只是诗和远方，还是千百
+          <span id="p13">次找寻特异配体的艰辛、浪漫和而不舍。实
+            验摄影比赛，探寻生命世界的多姿多彩；文献
+            研读培训，培养严谨填密的学术思维。协会旨
+            在为所有对生命科学感兴趣的同学提供更前沿
+            的信息与更便捷的平台
+          </span> 
+          </p>
+          <p><button class="btn btn-secondary"  id="button13">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+      
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/计算机网络.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>计算机与网络科技协会</h2>
+          <h3>★★★</h3>
+          <p>
+            计算机与网络科技协会成立于2000年，由信
+            息科学与技术学院指导。社团本着“服务大家，
+          <span id="p14">共同发展”的精神为全校师生普及电脑知识，传
+            播健康积极的网络文化、丰富校园生活，搭建丰
+            富多彩的学习交流计算机与网络科技知识的平
+            台。协会成功举办了以“E时代之星”系列校园
+            计算机知识比赛和内部培训为代表的一系列社团
+            活动。作为创始学校，与四川大学、西南财经大
+            学等成都其他7所高校8个协会合作，成立成都高
+            校计算机协会联盟，深入交流合作。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button14">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+      
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/环境.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>环境协会</h2>
+          <h3>★★★</h3>
+          <p>
+            环境协会成立于2015年，由地球科学与环
+            境工程学院指导。协会旨在培养大学生关注环
+          <span id="p15">保问题的意识，树立有效解决环境问题的观
+            念，提高大学生在实际中解决环境问题的能力
+            加强同学们的团队协作及创新实践的能力。协
+            会举办厂房粉尘过滤创意设计大赛，净化空（
+            小盆景设计大赛，环境知识竟答大赛等特色活
+            动，定期开展环境科普类讲座，积极在校园内
+            普及环境保护相关知识  
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button15">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/化学.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>化学协会</h2>
+          <h3>★★★</h3>
+          <p>
+            化学协会成立于2015年，由生命科学与工
+            程学院指导。协会旨在为化学爱好者提供良好
+          <span id="p16">的学习交流平台，为更多的化学学子普及化学
+            相关知识，增强同学们对化学的热爱与认知程
+            度。协会立足于“化学”知识，定期开展丰富
+            多彩的活动，帮助同学了解化学，热爱化学，
+            学习化学，也为活跃校园学术科技气氛，繁荣
+            校园文化贡献自己的力量。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button16">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/力学科技.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>力学与科技协会</h2>
+          <h3>★★★</h3>
+          <p>
+            力学与科技协会成立于2008年，由力学实验
+            中心指导。作为一个学术科技类社团，协会旨在
+          <span id="p17">丰富同学们的力学知识，锻炼同学们的实验创新
+            与动手能力，加深同学们对力学理论知识的理
+            解，为力学竞赛储各人才，以结构模型设计与力
+            学竟赛两大类品牌活动为背景，丰富同学们的课
+            外生活，锻炼同学们的实验创新与动手能力。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button17">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/物流.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>物流协会</h2>
+          <h3>★★★</h3>
+          <p>
+            物流协会成立于2010年，由交通运输与
+            物流学院指导。协会旨在为同学们提供一个
+          <span id="p18">更高效的物流学习平台。同时，协会还积极
+            在校内创新开展了一些富有趣味性的学生活
+            动，例如“大采购时代”活动。作为一个学
+            术性协会，物流协会也承办“全国大学生物
+            流设计大赛”以及与物流相关的设计竞赛、
+            创业比赛等各项大型赛事。为广大物流爱好
+            者们营造了良好的氛围，为中国未来最顶尖
+            的物流企业做好人才储备。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button18">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/工程实践.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>工程实践创新协会</h2>
+          <h3>★★</h3>
+          <p>
+            工程实践创新协会是在中国制造2025的大
+            背景下应运而生的学生社团，由工程训练中心
+          <span id="p19">指导，旨在成为爱动手，敢创新的DIY者之家
+            依托于校工程训练中心，工程实践创新协
+            会拥有车床，铣床，数控铣床，3D打印机，激
+            光切割机等更加便捷、完善的加工设各
+            协会主题活动为工程训练大赛，在协会全
+            体会员的努力之下，协会已成功承办第二届西
+            南交通大学工程训练大赛校赛，并且在相应省
+            级，国家级比赛中都取得奖项。
+          </span> 
+          </p>
+          <p><button class="btn btn-secondary"  id="button19">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/箐蓉.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>箐蓉协会</h2>
+          <h3>★★</h3>
+          <p>
+            菁蓉协会于2016年9月成立，“菁”字是精
+            华、纯粹之意，是事物最纯粹、最美好的部分
+          <span id="p20">喻指青年；“蓉”字指蓉城（成都）。指导单位
+            为国际创新创业学院，背靠成都创业群与成都创
+            客社区，努力营遺学校创新创业氛围，打造成四
+            川高校中知名度广，有责任有担当的创新型协
+            会。协会秉承“让每一位参与协会的成员得到成
+            长”的原则，坚持从0到1，坚持创新型、多元化
+            的发展路线，成功洋办了中国科学报社第一届全
+            国高校科普1I5制作大赛、多次“百人计划”导师
+            聘任仪式暨双创学科建设研讨会、第一届校园狼
+            人杀争霸赛等学校“第一次”活动和赛事，并设
+            立了狼人杀公会，全力打造集创业服务、创新型
+            娱乐活动于一体的多元化协会
+          </p>
+          <p><button class="btn btn-secondary"  id="button20">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/office.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>Office职场训练营</h2>
+          <h3>★★</h3>
+          <p>
+            office职场训练营成立于2017年，是在党委
+            办公室及校团委领导和指导下的学生组织，主要
+          <span id="p21">由西南交通大学党委办公室学生助理构成。本着
+            服务学校师生的原则，帮助我校学生掌挫职场知
+            识，在未来职场上赢得席之位，同时加强校内
+            外企业和在校学生的交流，并以党委办公室動上
+            助学网位开展职场实训，助力大学生职业素养的
+            培养
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button21">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/创客.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>创客协会</h2>
+          <h3>★★</h3>
+          <p>
+            创客协会服务于交大创客空间，负责创客空
+            向的日常运营等事务。交大创客空于2013年12
+          <span id="p22">月依托西南交通大学工程训练中心率先在西部高
+            校成立。2015年5月被成都市科学技术局授予首
+            批“成都市众创空间”称号，科技部火炬中心亦
+            将交大创客空间纳入国家级科技企业孵化器的管
+            理、服务和支持体系。我们一直承开放、分享
+            协作、创造的理念，致力于通过运营数字造环
+            境、组织各种创新交流与竟赛活动，鼓助兴趣爱
+            好导向的全面发展，为交大以及成都创客们创造
+            最优质丰富的氛围、提供将创意与梦想转变为现
+            实的平台
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button22">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/综合.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>综合设施工程协会</h2>
+          <h3>★★</h3>
+          <p>
+            工程实殴创新协会是在中国側造2025的大
+            背景下应运而生的学生社团，由工程训练中心
+          <span id="p23">指导，旨在成为爱动手，收创新的DIY者之家。
+            依托于校工程训练中心，工程实践创新协
+            会加有车床，铣床，数控铣床，3D打印机，激
+            光切割机等更加便捷、完善的加工设各。
+            协会主题活动为工程训练大赛，在协会全
+            体会员的努力之下，协会已成功承办第二届西
+            南交通大学工程训练大赛校赛，并且在相应省
+            级，国家级比赛中都取得奖项。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button23">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/电子.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>电子科技协会</h2>
+          <h3>★</h3>
+          <p>
+            电子科技协会成立于1987年，由信息科学与
+            技术学院指导。协会由一群电子设计爱好者建
+          <span id="p24">立，研究炫酷的电子产品，尝试各种电子DIY制
+            作，讨论如何解决在电子设计中的实际问题。协
+            会旨在共同学习，共同进步，为电子兴趣而努力，
+            在兗争中成长，成就未来的科技达人。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button24">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/学术科技/航模.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>航模协会</h2>
+          <h3>★</h3>
+          <p>
+            航模协会成立于2012年，由工业中心指导。
+            协会由一群航模爱好者组成，是一个旨在促进
+          <span id="p25">航模运动发展的良好平台。协会的活动围绕
+            “航模”这个中心，主要开展航模研究、创新、
+            制作、操作、飞行器航拍以及相关方面的竟赛
+            活动，紧荣交大航模运动，活跃学术气氛。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button25">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+  </div><!-- /.container -->
+
+</main>
+{% endblock %}

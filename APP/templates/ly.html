@@ -1,0 +1,237 @@
+{% extends 'base.html' %}
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="../static/community.css">
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script type="text/javascript">
+  $(document).ready(function(){
+    let nums=10;
+    for(let i=1;i<=nums;i++)
+    {
+      $("#p"+i.toString()).hide();
+    }
+
+    for(let i=1;i<=nums;i++)
+    {
+      $("#button"+i.toString()).click(function(){
+        $("#p"+i.toString()).toggle();
+      })
+    }
+  });
+</script>
+{% endblock %}
+{% block content %}
+<main role="main">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/理论研究/大学生心理学会.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>大学生心理协会  </h2>
+        <h3>★★★★★</h3>
+        <p>
+          大学生心理学会成立于1996年，由心理研
+          究与咨询中心指导，学会素以丰富多彩的社团活
+        <span id="p1">动活跃于交大校园，素拓展、迎新晚会、校外心
+          理辅导、3·25普爱我系列活动、心理情景劇大
+          赛、学术电影展等。学会自成立以来，所获荣誉不
+          断。曾多次被授予“校十佳社团”等光荣称号。
+          在2004年荣获“四川省十佳社团，2012年被
+          评为“全国大学生优秀社团”，2013年荣获“全
+          国十佳社团＂称号，2014年成为交大历史上第
+          一个“全国高校十使品牌社团＂．2017年被评选
+          为“全国大中专学生最具影响力理论社团
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button1">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/理论研究/国际关系研究会.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>国际关系研究会  </h2>
+        <h3>★★★★★</h3>
+        <p>
+          大学生心理学会成立于1996年，由心理研
+          究与咨询中心指导，学会素以丰富多彩的社团活
+        <span id="p2">动活跃于交大校园，素拓展、迎新晚会、校外心
+          理辅导、3·25普爱我系列活动、心理情景劇大
+          赛、学术电影展等。学会自成立以来，所获荣誉不
+          断。曾多次被授予“校十佳社团”等光荣称号。
+          在2004年荣获“四川省十佳社团，2012年被
+          评为“全国大学生优秀社团”，2013年荣获“全
+          国十佳社团＂称号，2014年成为交大历史上第
+          一个“全国高校十使品牌社团＂．2017年被评选
+          为“全国大中专学生最具影响力理论社团
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button2">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="../static/理论研究/中医药与文化健康.jpg" alt="Generic placeholder image" width="100" height="100">
+        <h2>中医药与文化健康</h2>
+        <h3>★★★★★</h3>
+        <p>
+          中医药文化与健康协会成立于2005年，由
+          生命科学与工程学院指导。协会始终以弘扬国药
+        <span id="p3">传统文化，受健康美丽人生为宗旨，协会成立
+          十年以来一步步成长，一点点壮大协会通过组
+          织药材，保健等知识的培训，普及大学生健康生
+          活的理念。此外，协会还积极开展健康减肥大赛，
+          中药面膜制作大赛，药膳制作等趣味竞赛，丰富
+          同学们的校园文化生活。
+        </span>
+        </p>
+        <p><button class="btn btn-secondary"  id="button3">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/理论研究/汽车爱好协会.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>汽车爱好者协会</h2>
+          <h3>★★★★</h3>
+          <p>
+            汽车爱好者协会成立于2011年，由机车车
+            辆研究所指导。协会致力于为汽车爱好者提供
+          <span id="p4">个交流学习的平台。在我国汽车工业飞速发展的
+            背景下，为了让学校的汽车爱好者有一个便于交
+            流和提高自身汽车水平的载体，汽车协会应运而
+            生。协会以普及专业汽车知识，提升学生实践能
+            力，营造校园汽车氛为宗旨，创立以来，积极进
+            行组织建设，并发挥我校汽车专业的重点发展优
+            势，争取在校内开展有影响力，能扩展学校汽车
+            爱好者汽车知识的活动，营造校园内竞争的汽车
+            爱好文化氛围。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button4">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/理论研究/马克思.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>青年马克思注意发展协会</h2>
+          <h3>★★★</h3>
+          <p>
+            青年马克思主义发展协会成立于2011年，
+            由人文学院指导。协会以马克思主义重要思想
+          <span id="p5">为指导思想，通过组织学习、研究、探讨，带动广
+            大同学认真学习领会其基本思想，掌握其思维
+            方式，并以马克思主义伟大成果为基础扩展延
+            伸到与此相关的各方面基础学科理论，为广大
+            热爱学习的同学提供上进的平台，丰富广大的
+            在校学生的精神生活，培养同学高尚的兴趣爱
+            好。协会在努力做到提高金校学生的理论修养
+            和思想认识水平，引导同学们像马克思主义伟
+            大思想靠拢，为学校的改革发展做贡献。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button5">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/理论研究/消防.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>消防安全协会 </h2>
+          <h3>★★★</h3>
+          <p>
+            消防安全协会成立于2011年，由地球科学
+            与环境工程学院指导。协会致力于搭建一个了
+          <span id="p6">解、学习、认识、探讨消防的平台，让大家在一个
+            轻松、愉快、欢乐的氛围下了解消防安全的重要
+            性，学习与探讨消防知识。协会本若“丰富校园
+            消防文化，提升校园安全氛围＂”的目标，开展了
+            系列有声势、有规模、有影响的协会活动，并得
+            到广大师生的一致好评。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button6">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/理论研究/雾都.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>雾都天文社</h2>
+          <h3>★★★</h3>
+          <p>
+            雾都天文社成立于2012年，由物理科学与
+            技术学院指导，因筹建初期成都多雾而得名。天
+          <span id="p7">文社以普及天文知识为宗旨，立志以少部分人的
+            行动带动多数人对星空的兴趣。天文社不断探索
+            活动形式，举办丰富精彩的天文活动，不仅提高
+            了会员们的天文兴趣和知识水平，增强社团凝聚
+            力，还通过比赛和讲座，进行天文科普，用专业的
+            器材探索夜空，用详实的理论推演宇宙，燃起了
+            交大学子的天文热情。轩北斗，遥望盛世繁华
+            猎户雄狮，笑傲寰宇苍穹。
+            </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button7">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/理论研究/国防.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>国防教育协会 </h2>
+          <h3>★★★</h3>
+          <p>
+            国防教育协会成立于2006年，由武装部指
+            导、协会致力于为交大的军事爱好者提供一个交
+          <span id="p8">流学习的平台，同时强化大学生国防意识。国防
+            教于协会旨在通过丰富多彩的各项活动，在实践
+            中提升大家的军事技能，为交大学子普及国防知
+            识
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button8">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/理论研究/研究生心理.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>研究生心理协会</h2>
+          <h3>★★</h3>
+          <p>
+            西南交通大学研究生心理学会是依托于校
+            心理研究与咨询中心和校团委、服务于全校师生
+          <span id="p9">的学生社团组织，成立于2006年，是目前学校研
+            究生群体中唯一一个校级学生社团。我们旨在丰
+            富研究生课余生活，提供多元化课外素质拓展活
+            动，提供专业心理咨询或讲座，通过心理健康知
+            识的普及引导研究生树立正确的价值观、实现身
+            体健康和心理健康协调发展。
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button9">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/理论研究/证券.jpg" alt="Generic placeholder image" width="100" height="100">
+          <h2>证券交流协会</h2>
+          <h3>★★</h3>
+          <p>
+            证券交流协会成立于2016年，由经济管理
+            学院指导。协会致力于为交大的证券爱好者以及
+          <span id="p10">对证券有兴趣的同学提供一个了解证券、学习技
+            术、交流探讨心得的平台，为大家普及证券知识
+            培养大学生对证券投资的基础认识。虽然刚刚成
+            立，但协会中不乏对证券见解颇深，有丰富经验
+            的炒股大牛。协会内部定期组织知识培训以及模
+            拟炒股大赛，旨在传播普及证券知识的同时，帮
+            助同学们将理论应用于实践，获得更好地提升和
+            进步
+          </span>
+          </p>
+          <p><button class="btn btn-secondary"  id="button10">View details &raquo;</button></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+  </div><!-- /.container -->
+
+</main>
+{% endblock %}
