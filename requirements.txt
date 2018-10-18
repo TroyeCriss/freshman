@@ -1,0 +1,6 @@
+#coding:utf-8
+#flask扩展包
+Flask
+flask-script
+flask-WTF
+flask-Bootstrap
